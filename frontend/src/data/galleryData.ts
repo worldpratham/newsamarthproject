@@ -32,7 +32,7 @@ export const galleryItems: GalleryItem[] = [
     id: 4,
     title: 'Technical Skill Learning Lab',
     category: 'Training',
-    image: '/gallery/gallery-4.jpg',
+    image: '/gallery/gallery-3.jpg',
     wpImage: 'https://samarthbharat.net/wp-content/uploads/2022/09/IMG-20220927-WA0126-1.jpg',
   },
   {
@@ -88,7 +88,7 @@ export const galleryItems: GalleryItem[] = [
     id: 12,
     title: 'Community Training Programs Group',
     category: 'Community',
-    image: '/gallery/gallery-12.jpeg',
+    image: '/community-training-banner.jpeg',
     wpImage: 'https://samarthbharat.net/wp-content/uploads/2025/08/community-training-pics-scaled.jpeg',
   },
   {
@@ -102,7 +102,7 @@ export const galleryItems: GalleryItem[] = [
     id: 14,
     title: 'Career Development Center (CDC)',
     category: 'Centers',
-    image: '/gallery/gallery-14.png',
+    image: '/cdc/banner.png',
     wpImage: 'https://samarthbharat.net/wp-content/uploads/2025/07/CDC-career-development-centers.png',
   },
   {
