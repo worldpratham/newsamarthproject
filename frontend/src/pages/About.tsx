@@ -37,12 +37,12 @@ export default function About() {
             </h1>
 
             {/* First Paragraph */}
-            <p className="font-['Montserrat',sans-serif] text-[#555555] text-[14px] sm:text-[15px] leading-[1.8] text-justify mb-4">
+            <p className="font-['Montserrat',sans-serif] text-[#555555] text-[14px] sm:text-[15px] leading-[1.8] text-left sm:text-justify mb-4">
               Bhaorao Deoras Seva Nyas is a non-profit charitable trust (Under section 12 AA registered 1993) working for the 360-degree development of the economically and socially deprived class for more than 26 years across the country. Our Trust is also successfully maintaining the Vishram Sadans near AIIMS New Delhi, at SGPGI Lucknow and at IGIMS Patna.
             </p>
 
             {/* Second Paragraph */}
-            <p className="font-['Montserrat',sans-serif] text-[#555555] text-[14px] sm:text-[15px] leading-[1.8] text-justify mb-6">
+            <p className="font-['Montserrat',sans-serif] text-[#555555] text-[14px] sm:text-[15px] leading-[1.8] text-left sm:text-justify mb-6">
               The vision of our trust is to make the socially and economically weaker section of the society, self-sufficient and to enable them live with pride. To fulfil this vision, Bhaorao Deoras Seva Nyas (BDSN) has planned to provide Skill Development Training to the unemployed youth (the severity of which has further intensified during the current pandemic of COVID-19) to help them break away from poverty, by leveraging the training/hand holding to work their way up the social and economic ladder with dignity and pride.
             </p>
 
@@ -62,7 +62,7 @@ export default function About() {
 
         {/* Bottom Full-Width Paragraph */}
         <div className="mt-8 md:mt-10 pt-2">
-          <p className="font-['Montserrat',sans-serif] text-[#555555] text-[14px] sm:text-[15px] leading-[1.8] text-justify">
+          <p className="font-['Montserrat',sans-serif] text-[#555555] text-[14px] sm:text-[15px] leading-[1.8] text-left sm:text-justify">
             The Nyas is conducting the trainings under the banner – <strong className="font-bold text-gray-900">Samarth Bharat</strong>. BDSN will provide pathways for re-skilling and up-skilling youth in the pre-identified sectors. The idea is to either enable them to transit into formal sector employment post training through the developed network of quality instructors or to help the enthusiastic and capable candidates to begin an entrepreneurial journey in their field of training. We are primarily focusing on hand skill based works such as: Electrician; AC, Washing Machine Technician; Beautician, Hair Stylist; Smartphones Repair Technician, CCTV technician etc.
           </p>
         </div>

@@ -433,10 +433,10 @@ export default function CommunityTrainingPrograms() {
                     </h3>
                   </div>
 
-                  {/* Details & Action Button (60% / 40% split matching WordPress) */}
-                  <div className="flex items-end justify-between p-4 pt-1 gap-2 mt-auto">
-                    {/* Left 60%: Icon List */}
-                    <ul className="w-[62%] space-y-1 text-xs font-['Montserrat',sans-serif] text-gray-800">
+                  {/* Details & Action Button (responsive layout) */}
+                  <div className="flex flex-col sm:flex-row items-stretch sm:items-end justify-between p-4 pt-1 gap-2.5 sm:gap-2 mt-auto">
+                    {/* Left: Icon List */}
+                    <ul className="w-full sm:w-[60%] space-y-1 text-xs font-['Montserrat',sans-serif] text-gray-800">
                       <li className="flex items-center gap-1.5">
                         <Globe size={13} className="text-[#F87902] shrink-0" />
                         <span className="truncate">{course.language}</span>
@@ -451,11 +451,11 @@ export default function CommunityTrainingPrograms() {
                       </li>
                     </ul>
 
-                    {/* Right 40%: Course Detail Button */}
-                    <div className="w-[38%] text-right">
+                    {/* Right: Course Detail Button */}
+                    <div className="w-full sm:w-[40%] text-left sm:text-right">
                       <Link
                         to={course.slug}
-                        className="inline-block w-full bg-[#F87902] hover:bg-[#e06c00] text-white font-['Montserrat',sans-serif] text-[11px] font-medium uppercase tracking-wider py-2 px-1 rounded text-center transition-colors shadow-xs"
+                        className="inline-block w-full bg-[#F87902] hover:bg-[#e06c00] text-white font-['Montserrat',sans-serif] text-xs font-medium uppercase tracking-wider py-2 sm:py-2 px-2 rounded text-center transition-colors shadow-xs"
                       >
                         Course Detail
                       </Link>
@@ -533,11 +533,18 @@ export default function CommunityTrainingPrograms() {
             </div>
           </div>
 
+          {/* Mobile scroll hint */}
+          <div className="flex items-center justify-between text-xs text-gray-500 mb-2 sm:hidden px-1">
+            <span className="flex items-center gap-1 font-medium text-[#001C5C]">
+              👉 Swipe horizontally to view all center columns
+            </span>
+          </div>
+
           {/* TablePress Table matching WordPress Design */}
-          <div className="overflow-x-auto border border-[#ddd] shadow-2xs mb-3 bg-white">
+          <div className="overflow-x-auto border border-[#ddd] shadow-2xs mb-3 bg-white -mx-4 sm:mx-0">
             <table
               id="tablepress-15"
-              className="w-full border-collapse text-left font-['Montserrat',sans-serif] text-xs sm:text-[13px]"
+              className="w-full min-w-[700px] border-collapse text-left font-['Montserrat',sans-serif] text-xs sm:text-[13px]"
             >
               <thead>
                 <tr className="bg-[#001C5C] text-white select-none">
@@ -706,8 +713,8 @@ export default function CommunityTrainingPrograms() {
 
       {/* Enroll Now Modal */}
       {enrollModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs animate-fade-in">
-          <div className="bg-white rounded-2xl shadow-2xl max-w-lg w-full p-6 sm:p-8 relative border border-gray-100">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-xs animate-fade-in">
+          <div className="bg-white rounded-2xl shadow-2xl max-w-lg w-full max-h-[92vh] overflow-y-auto p-5 sm:p-8 relative border border-gray-100">
             <button
               onClick={() => setEnrollModalOpen(false)}
               className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 p-1.5 rounded-full hover:bg-gray-100 transition-colors cursor-pointer"

@@ -9,7 +9,7 @@ interface PageBannerProps {
 
 export default function PageBanner({ title, subtitle, bgImage }: PageBannerProps) {
   return (
-    <section className="relative h-[280px] md:h-[340px] flex items-center justify-center overflow-hidden">
+    <section className="relative h-[200px] sm:h-[260px] md:h-[320px] flex items-center justify-center overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
@@ -17,15 +17,19 @@ export default function PageBanner({ title, subtitle, bgImage }: PageBannerProps
         }}
       />
       <div className="absolute inset-0 hero-overlay" />
-      <div className="relative z-10 text-center text-white px-4">
-        <h1 className="text-3xl md:text-5xl font-bold mb-3 text-shadow animate-fade-in-up">{title}</h1>
+      <div className="relative z-10 text-center text-white px-4 w-full max-w-4xl mx-auto">
+        <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-2 sm:mb-3 text-shadow animate-fade-in-up leading-tight">
+          {title}
+        </h1>
         {subtitle && (
-          <p className="text-base md:text-lg text-dark-200 max-w-2xl mx-auto animate-fade-in-up">{subtitle}</p>
+          <p className="text-xs sm:text-sm md:text-base text-dark-200 max-w-2xl mx-auto animate-fade-in-up line-clamp-2 px-2">
+            {subtitle}
+          </p>
         )}
-        <nav className="flex items-center justify-center gap-2 mt-4 text-sm text-dark-300">
-          <Link to="/" className="hover:text-white transition-colors">Home</Link>
-          <ChevronRight size={14} />
-          <span className="text-white">{title}</span>
+        <nav className="flex items-center justify-center gap-1.5 sm:gap-2 mt-3 sm:mt-4 text-xs sm:text-sm text-dark-300">
+          <Link to="/" className="hover:text-white transition-colors shrink-0">Home</Link>
+          <ChevronRight size={14} className="shrink-0" />
+          <span className="text-white font-medium truncate max-w-[180px] sm:max-w-md">{title}</span>
         </nav>
       </div>
     </section>

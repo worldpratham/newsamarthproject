@@ -377,7 +377,7 @@ export default function CourseDetail() {
         {/* Interactive Tabs Section */}
         <section className="mb-14 sm:mb-16">
           {/* Tabs Navigation Bar */}
-          <div className="flex items-center border-b border-gray-300 gap-2 sm:gap-4 overflow-x-auto">
+          <div className="flex items-center border-b border-gray-300 gap-1.5 sm:gap-4 overflow-x-auto no-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0">
             <button
               type="button"
               onClick={() => setActiveTab('details')}
@@ -498,56 +498,65 @@ export default function CourseDetail() {
                   </p>
                 </div>
               ) : (
-                <div className="overflow-x-auto rounded-[8px] border border-gray-200 shadow-xs">
-                  <table className="w-full text-left border-collapse font-['Montserrat',sans-serif]">
-                    <thead>
-                      <tr className="bg-[#001C5C] text-white text-xs sm:text-sm font-semibold uppercase tracking-wider">
-                        <th className="py-3.5 px-4 w-16 text-center">S. NO.</th>
-                        <th className="py-3.5 px-4 w-32">State</th>
-                        <th className="py-3.5 px-4 w-44">Training Name</th>
-                        <th className="py-3.5 px-4">Address</th>
-                        <th className="py-3.5 px-4 w-40 text-center">Google Location</th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-gray-200 text-[13px] sm:text-[13.5px] text-gray-800">
-                      {courseData.centers.map((center, idx) => (
-                        <tr
-                          key={idx}
-                          className={idx % 2 === 0 ? 'bg-white hover:bg-gray-50' : 'bg-gray-50/50 hover:bg-gray-100/70'}
-                        >
-                          <td className="py-3.5 px-4 text-center font-medium text-gray-500">
-                            {idx + 1}
-                          </td>
-                          <td className="py-3.5 px-4 font-semibold text-[#001C5C]">
-                            {center.state}
-                          </td>
-                          <td className="py-3.5 px-4 font-medium text-[#F87902]">
-                            {center.trainingName}
-                          </td>
-                          <td className="py-3.5 px-4 leading-relaxed text-gray-700">
-                            {center.address}
-                          </td>
-                          <td className="py-3.5 px-4 text-center">
-                            {center.googleLocationUrl ? (
-                              <a
-                                href={center.googleLocationUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-1 text-xs font-semibold text-[#001C5C] hover:text-[#F87902] transition-colors py-1 px-2.5 rounded bg-blue-50/80 hover:bg-orange-50 border border-blue-100 hover:border-orange-200"
-                              >
-                                <MapPin size={13} className="text-[#F87902]" />
-                                <span>View on Map</span>
-                                <ExternalLink size={11} className="text-gray-400" />
-                              </a>
-                            ) : (
-                              <span className="text-gray-400 text-xs">N/A</span>
-                            )}
-                          </td>
+                <>
+                  {/* Mobile scroll hint */}
+                  <div className="flex items-center justify-between text-xs text-gray-500 mb-2 sm:hidden px-1">
+                    <span className="flex items-center gap-1 font-medium text-[#001C5C]">
+                      👉 Swipe horizontally to view all center columns
+                    </span>
+                  </div>
+
+                  <div className="overflow-x-auto rounded-[8px] border border-gray-200 shadow-xs -mx-4 sm:mx-0">
+                    <table className="w-full min-w-[620px] text-left border-collapse font-['Montserrat',sans-serif]">
+                      <thead>
+                        <tr className="bg-[#001C5C] text-white text-xs sm:text-sm font-semibold uppercase tracking-wider">
+                          <th className="py-3.5 px-4 w-16 text-center">S. NO.</th>
+                          <th className="py-3.5 px-4 w-32">State</th>
+                          <th className="py-3.5 px-4 w-44">Training Name</th>
+                          <th className="py-3.5 px-4">Address</th>
+                          <th className="py-3.5 px-4 w-40 text-center">Google Location</th>
                         </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
+                      </thead>
+                      <tbody className="divide-y divide-gray-200 text-[13px] sm:text-[13.5px] text-gray-800">
+                        {courseData.centers.map((center, idx) => (
+                          <tr
+                            key={idx}
+                            className={idx % 2 === 0 ? 'bg-white hover:bg-gray-50' : 'bg-gray-50/50 hover:bg-gray-100/70'}
+                          >
+                            <td className="py-3.5 px-4 text-center font-medium text-gray-500">
+                              {idx + 1}
+                            </td>
+                            <td className="py-3.5 px-4 font-semibold text-[#001C5C]">
+                              {center.state}
+                            </td>
+                            <td className="py-3.5 px-4 font-medium text-[#F87902]">
+                              {center.trainingName}
+                            </td>
+                            <td className="py-3.5 px-4 leading-relaxed text-gray-700">
+                              {center.address}
+                            </td>
+                            <td className="py-3.5 px-4 text-center">
+                              {center.googleLocationUrl ? (
+                                <a
+                                  href={center.googleLocationUrl}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="inline-flex items-center gap-1 text-xs font-semibold text-[#001C5C] hover:text-[#F87902] transition-colors py-1 px-2.5 rounded bg-blue-50/80 hover:bg-orange-50 border border-blue-100 hover:border-orange-200"
+                                >
+                                  <MapPin size={13} className="text-[#F87902]" />
+                                  <span>View on Map</span>
+                                  <ExternalLink size={11} className="text-gray-400" />
+                                </a>
+                              ) : (
+                                <span className="text-gray-400 text-xs">N/A</span>
+                              )}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </>
               )}
 
               <div className="mt-8">
@@ -605,7 +614,7 @@ export default function CourseDetail() {
             {/* Registration Form */}
             <form
               onSubmit={handleSubmit}
-              className="bg-white border border-gray-200 rounded-[12px] p-6 sm:p-10 shadow-xs space-y-5"
+              className="bg-white border border-gray-200 rounded-[12px] p-5 sm:p-8 md:p-10 shadow-xs space-y-5"
             >
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 {/* Full Name */}

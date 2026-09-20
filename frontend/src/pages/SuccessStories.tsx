@@ -60,7 +60,7 @@ function StoryCard({ story, globalIndex }: { story: StoryItem; globalIndex: numb
         <p className="font-['Montserrat',sans-serif] text-[#F87902] text-sm font-semibold mb-2 break-words">
           {story.role}
         </p>
-        <p className="font-['Montserrat',sans-serif] text-[#111111] text-[13.5px] leading-[1.75] text-justify break-words">
+        <p className="font-['Montserrat',sans-serif] text-[#111111] text-[13.5px] leading-[1.75] text-left sm:text-justify break-words">
           {storyContent}
         </p>
       </div>

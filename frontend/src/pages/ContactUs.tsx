@@ -88,7 +88,7 @@ export default function ContactUs() {
       {/* Contact Form */}
       <section className="py-16 bg-dark-50">
         <div className="container-page">
-          <div className="max-w-2xl mx-auto bg-white rounded-2xl p-8 shadow-lg border border-dark-100">
+          <div className="max-w-2xl mx-auto bg-white rounded-2xl p-5 sm:p-8 shadow-lg border border-dark-100">
             <h2 className="text-2xl font-bold text-dark-800 mb-2 text-center">Send Us a Message</h2>
             <p className="text-dark-500 text-sm text-center mb-8">We'd love to hear from you. Fill out the form below and we'll get back to you soon.</p>
 
@@ -110,7 +110,7 @@ export default function ContactUs() {
                     required
                     value={form.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-2.5 rounded-lg border border-dark-200 text-dark-800 text-sm focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-100 transition-all"
+                    className="w-full px-4 py-2.5 rounded-lg border border-dark-200 text-dark-800 text-base sm:text-sm focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-100 transition-all"
                     placeholder="Your full name"
                   />
                 </div>
@@ -123,7 +123,7 @@ export default function ContactUs() {
                     required
                     value={form.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-2.5 rounded-lg border border-dark-200 text-dark-800 text-sm focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-100 transition-all"
+                    className="w-full px-4 py-2.5 rounded-lg border border-dark-200 text-dark-800 text-base sm:text-sm focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-100 transition-all"
                     placeholder="you@example.com"
                   />
                 </div>
@@ -137,7 +137,7 @@ export default function ContactUs() {
                     name="phone"
                     value={form.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-2.5 rounded-lg border border-dark-200 text-dark-800 text-sm focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-100 transition-all"
+                    className="w-full px-4 py-2.5 rounded-lg border border-dark-200 text-dark-800 text-base sm:text-sm focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-100 transition-all"
                     placeholder="Your phone number"
                   />
                 </div>
@@ -149,7 +149,7 @@ export default function ContactUs() {
                     name="subject"
                     value={form.subject}
                     onChange={handleChange}
-                    className="w-full px-4 py-2.5 rounded-lg border border-dark-200 text-dark-800 text-sm focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-100 transition-all"
+                    className="w-full px-4 py-2.5 rounded-lg border border-dark-200 text-dark-800 text-base sm:text-sm focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-100 transition-all"
                     placeholder="Subject"
                   />
                 </div>
@@ -163,7 +163,7 @@ export default function ContactUs() {
                   rows={5}
                   value={form.message}
                   onChange={handleChange}
-                  className="w-full px-4 py-2.5 rounded-lg border border-dark-200 text-dark-800 text-sm focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-100 transition-all resize-none"
+                  className="w-full px-4 py-2.5 rounded-lg border border-dark-200 text-dark-800 text-base sm:text-sm focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-100 transition-all resize-none"
                   placeholder="Your message..."
                 />
               </div>

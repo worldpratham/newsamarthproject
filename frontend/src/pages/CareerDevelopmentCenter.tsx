@@ -210,18 +210,22 @@ export default function CareerDevelopmentCenter() {
           </div>
 
           {/* Logo Carousel / Marquee */}
-          <div className="mb-12 overflow-hidden py-4 border-y border-gray-100 bg-gray-50/50">
-            <div className="flex gap-10 items-center animate-marquee whitespace-nowrap">
-              {partnerCollegeLogos.concat(partnerCollegeLogos).map((logo, idx) => (
+          <div className="relative mb-12 overflow-hidden py-4 border-y border-gray-100 bg-gray-50/50 group">
+            {/* Subtle edge fade overlays */}
+            <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-8 sm:w-16 bg-gradient-to-r from-gray-50 to-transparent z-10" />
+            <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-8 sm:w-16 bg-gradient-to-l from-gray-50 to-transparent z-10" />
+
+            <div className="flex w-max gap-6 sm:gap-10 items-center animate-marquee-left">
+              {[...partnerCollegeLogos, ...partnerCollegeLogos, ...partnerCollegeLogos].map((logo, idx) => (
                 <div
                   key={idx}
-                  className="inline-flex items-center justify-center shrink-0 w-28 h-24 bg-white p-2 rounded-lg shadow-xs border border-gray-200/60"
+                  className="inline-flex items-center justify-center shrink-0 w-24 sm:w-28 h-20 sm:h-24 bg-white p-2 rounded-lg shadow-xs border border-gray-200/60"
                   title={logo.name}
                 >
                   <img
                     src={`/cdc/colleges/${logo.file}`}
                     alt={logo.name}
-                    className="max-h-16 max-w-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                    className="max-h-12 sm:max-h-16 max-w-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
                     onError={(e) => {
                       (e.target as HTMLImageElement).src = `https://samarthbharat.net/wp-content/uploads/2025/09/${logo.file}`;
                     }}

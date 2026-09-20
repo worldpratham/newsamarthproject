@@ -311,17 +311,17 @@ function CourseCarousel() {
       {/* Navigation arrows (Subtle chevrons on sides matching WordPress) */}
       <button
         onClick={prevSlide}
-        className="absolute -left-2 sm:-left-4 top-1/2 -translate-y-1/2 w-8 h-8 text-dark-300 hover:text-dark-700 transition-colors flex items-center justify-center z-10 cursor-pointer"
+        className="absolute left-0 sm:-left-4 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-9 sm:h-9 bg-white/90 sm:bg-transparent rounded-full shadow-xs sm:shadow-none text-dark-500 hover:text-dark-800 transition-colors flex items-center justify-center z-10 cursor-pointer"
         aria-label="Previous course"
       >
-        <ChevronLeft size={28} className="stroke-[1.5]" />
+        <ChevronLeft size={24} className="stroke-[2]" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute -right-2 sm:-right-4 top-1/2 -translate-y-1/2 w-8 h-8 text-dark-300 hover:text-dark-700 transition-colors flex items-center justify-center z-10 cursor-pointer"
+        className="absolute right-0 sm:-right-4 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-9 sm:h-9 bg-white/90 sm:bg-transparent rounded-full shadow-xs sm:shadow-none text-dark-500 hover:text-dark-800 transition-colors flex items-center justify-center z-10 cursor-pointer"
         aria-label="Next course"
       >
-        <ChevronRight size={28} className="stroke-[1.5]" />
+        <ChevronRight size={24} className="stroke-[2]" />
       </button>
     </div>
   );
@@ -579,7 +579,7 @@ export default function Home() {
                   <CountUp
                     target={11800}
                     suffix="+"
-                    className="text-5xl sm:text-6xl lg:text-7xl font-serif font-bold text-white tracking-tight leading-none"
+                    className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-serif font-bold text-white tracking-tight leading-none"
                   />
                   <p className="text-white text-base sm:text-lg font-medium mt-2">
                     Trained
@@ -591,7 +591,7 @@ export default function Home() {
                   <CountUp
                     target={65}
                     suffix="%"
-                    className="text-5xl sm:text-6xl lg:text-7xl font-serif font-bold text-white tracking-tight leading-none"
+                    className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-serif font-bold text-white tracking-tight leading-none"
                   />
                   <p className="text-white text-base sm:text-lg font-medium mt-2">
                     Working and earning
@@ -603,7 +603,7 @@ export default function Home() {
                   <CountUp
                     target={2937}
                     suffix=""
-                    className="text-5xl sm:text-6xl lg:text-7xl font-serif font-bold text-white tracking-tight leading-none"
+                    className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-serif font-bold text-white tracking-tight leading-none"
                   />
                   <p className="text-white text-base sm:text-lg font-medium mt-2">
                     Running a business
@@ -615,7 +615,7 @@ export default function Home() {
                   <CountUp
                     target={100}
                     suffix="+"
-                    className="text-5xl sm:text-6xl lg:text-7xl font-serif font-bold text-white tracking-tight leading-none"
+                    className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-serif font-bold text-white tracking-tight leading-none"
                   />
                   <p className="text-white text-base sm:text-lg font-medium mt-2">
                     Training Centers
@@ -628,7 +628,7 @@ export default function Home() {
                     <CountUp
                       target={16}
                       suffix=""
-                      className="text-5xl sm:text-6xl lg:text-7xl font-serif font-bold text-white tracking-tight leading-none"
+                      className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-serif font-bold text-white tracking-tight leading-none"
                     />
                     <p className="text-white text-base sm:text-lg font-medium mt-2">
                       States

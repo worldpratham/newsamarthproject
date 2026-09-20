@@ -224,25 +224,44 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="lg:hidden bg-white border-t border-dark-100 animate-fade-in shadow-lg">
-            <nav className="container-page py-4 flex flex-col gap-1">
+          <div className="lg:hidden bg-white border-t border-gray-200 animate-fade-in shadow-xl max-h-[calc(100vh-72px)] overflow-y-auto">
+            <nav className="container-page py-3 flex flex-col gap-1">
+              {/* Mobile Quick Contact Strip */}
+              <div className="bg-[#001C5C] text-white p-3 rounded-lg mb-2 flex items-center justify-between text-xs">
+                <a
+                  href="tel:8595887700"
+                  className="flex items-center gap-1.5 hover:text-orange-300 transition-colors font-medium"
+                >
+                  <Phone size={13} className="text-[#F87902]" />
+                  <span>8595887700</span>
+                </a>
+                <a
+                  href="mailto:contact@samarthbharat.net"
+                  className="flex items-center gap-1.5 hover:text-orange-300 transition-colors"
+                >
+                  <Mail size={13} className="text-[#F87902]" />
+                  <span className="truncate max-w-[130px] sm:max-w-none">contact@samarthbharat.net</span>
+                </a>
+              </div>
+
               {navLinks.map((link) => (
-                <div key={link.label}>
+                <div key={link.label} className="border-b border-gray-50 last:border-b-0 pb-0.5">
                   {link.isExternal ? (
                     <a
                       href={link.path}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block px-4 py-2.5 rounded-lg text-sm font-medium text-dark-700 hover:bg-orange-50 hover:text-orange-600"
+                      className="block px-3.5 py-2.5 rounded-lg text-[14.5px] font-medium text-dark-700 hover:bg-orange-50 hover:text-orange-600 transition-colors"
                     >
                       {link.label}
                     </a>
                   ) : (
                     <Link
                       to={link.path}
-                      className={`block px-4 py-2.5 rounded-lg text-sm font-medium transition-colors ${
+                      onClick={() => setMobileMenuOpen(false)}
+                      className={`block px-3.5 py-2.5 rounded-lg text-[14.5px] font-medium transition-colors ${
                         isActive(link.path)
-                          ? 'text-primary-600 bg-primary-50'
+                          ? 'text-[#F87902] bg-orange-50 font-semibold'
                           : 'text-dark-700 hover:bg-orange-50 hover:text-orange-600'
                       }`}
                     >
@@ -250,13 +269,13 @@ export default function Header() {
                     </Link>
                   )}
                   {link.dropdown && (
-                    <div className="ml-4 pl-2 border-l border-gray-200 flex flex-col gap-1 my-1">
+                    <div className="ml-4 pl-3 border-l-2 border-orange-200 flex flex-col gap-1 my-1">
                       {link.dropdown.map((subItem) => (
                         <Link
                           key={subItem.label}
                           to={subItem.path}
                           onClick={() => setMobileMenuOpen(false)}
-                          className="px-3 py-1.5 text-xs text-dark-600 hover:text-orange-600"
+                          className="px-2.5 py-2 text-[13px] text-dark-600 hover:text-[#F87902] transition-colors rounded"
                         >
                           {subItem.label}
                         </Link>
@@ -265,16 +284,20 @@ export default function Header() {
                   )}
                 </div>
               ))}
-              <div className="flex gap-2 pt-2 border-t border-gray-100 mt-2">
+
+              {/* Action Buttons */}
+              <div className="flex gap-2 pt-3 border-t border-gray-100 mt-2">
                 <Link
                   to="/donate-us"
-                  className="flex-1 text-center py-2.5 bg-[#F87902] text-white font-bold text-xs uppercase tracking-wider rounded"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="flex-1 text-center py-2.5 bg-[#F87902] hover:bg-[#e06c00] text-white font-bold text-xs uppercase tracking-wider rounded shadow-xs transition-colors"
                 >
                   DONATE US
                 </Link>
                 <Link
                   to="/contact-us"
-                  className="flex-1 text-center py-2.5 bg-[#001C5C] text-white font-bold text-xs uppercase tracking-wider rounded"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="flex-1 text-center py-2.5 bg-[#001C5C] hover:bg-[#001547] text-white font-bold text-xs uppercase tracking-wider rounded shadow-xs transition-colors"
                 >
                   CONTACT US
                 </Link>

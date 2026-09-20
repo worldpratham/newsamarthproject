@@ -153,10 +153,10 @@ export default function Gallery() {
           {/* Previous Button */}
           <button
             onClick={showPrev}
-            className="absolute left-2 sm:left-6 top-1/2 -translate-y-1/2 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-black/50 hover:bg-[#F87902] text-white flex items-center justify-center transition-all cursor-pointer z-50 shadow-md"
+            className="absolute left-2 sm:left-6 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/50 hover:bg-[#F87902] text-white flex items-center justify-center transition-all cursor-pointer z-50 shadow-md"
             aria-label="Previous image"
           >
-            <ChevronLeft size={26} />
+            <ChevronLeft size={22} className="sm:w-6 sm:h-6" />
           </button>
 
           {/* Main Image Container */}
@@ -184,10 +184,10 @@ export default function Gallery() {
           {/* Next Button */}
           <button
             onClick={showNext}
-            className="absolute right-2 sm:right-6 top-1/2 -translate-y-1/2 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-black/50 hover:bg-[#F87902] text-white flex items-center justify-center transition-all cursor-pointer z-50 shadow-md"
+            className="absolute right-2 sm:right-6 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/50 hover:bg-[#F87902] text-white flex items-center justify-center transition-all cursor-pointer z-50 shadow-md"
             aria-label="Next image"
           >
-            <ChevronRight size={26} />
+            <ChevronRight size={22} className="sm:w-6 sm:h-6" />
           </button>
         </div>
       )}

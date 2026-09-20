@@ -196,7 +196,7 @@ export default function ProjectTeam() {
                   </p>
 
                   {/* Bio / Description */}
-                  <div className="font-['Montserrat',sans-serif] text-[#555555] text-[13.5px] sm:text-[14px] leading-[1.8] text-justify space-y-2.5">
+                  <div className="font-['Montserrat',sans-serif] text-[#555555] text-[13.5px] sm:text-[14px] leading-[1.8] text-left sm:text-justify space-y-2.5">
                     {member.description}
                   </div>
                 </div>

@@ -169,11 +169,18 @@ export default function CentresDetails() {
           {/* Quick Search & Filter Toolbar */}
       
 
+          {/* Mobile swipe hint */}
+          <div className="flex items-center justify-between text-xs text-gray-500 mb-2 sm:hidden px-1">
+            <span className="flex items-center gap-1 font-medium text-[#001C5C]">
+              👉 Swipe horizontally to view all columns
+            </span>
+          </div>
+
           {/* 3. The wpdtSimpleTable-1 matching WordPress table layout */}
-          <div className="overflow-x-auto border border-[#ccc] shadow-2xs mb-8 bg-white">
+          <div className="overflow-x-auto border border-[#ccc] shadow-2xs mb-8 bg-white -mx-4 sm:mx-0">
             <table
               id="wpdtSimpleTable-1"
-              className="w-full border-collapse text-center font-['Montserrat',sans-serif] text-xs sm:text-[13px]"
+              className="w-full min-w-[680px] border-collapse text-center font-['Montserrat',sans-serif] text-xs sm:text-[13px]"
               style={{ borderCollapse: 'collapse', borderSpacing: '0px' }}
             >
               <thead>
@@ -325,8 +332,8 @@ export default function CentresDetails() {
 
       {/* 4. Enroll Now Modal Popup matching Elementor Popup 1022 */}
       {enrollModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs animate-fade-in">
-          <div className="bg-white rounded-2xl shadow-2xl max-w-lg w-full p-6 sm:p-8 relative border border-gray-100">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-xs animate-fade-in">
+          <div className="bg-white rounded-2xl shadow-2xl max-w-lg w-full max-h-[92vh] overflow-y-auto p-5 sm:p-8 relative border border-gray-100">
             <button
               onClick={() => setEnrollModalOpen(false)}
               className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 p-1.5 rounded-full hover:bg-gray-100 transition-colors cursor-pointer"

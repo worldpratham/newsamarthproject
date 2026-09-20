@@ -36,12 +36,12 @@ export default function SamarthBharatIntro() {
             </h1>
 
             {/* Paragraph 1 */}
-            <p className="font-['Montserrat',sans-serif] text-[#555555] text-[13.5px] sm:text-[14.5px] leading-[1.75] text-justify mb-4">
+            <p className="font-['Montserrat',sans-serif] text-[#555555] text-[13.5px] sm:text-[14.5px] leading-[1.75] text-left sm:text-justify mb-4">
               The vision of BDSN is to make the socially and economically weaker section of the society, self-sufficient and to enable them live with pride. To fulfil this vision, BDSN has planned to provide Skill Development Training to the unemployed youth (the severity of which has further intensified during the current pandemic of COVID-19) to help them break away from poverty, by leveraging the training / hand holding to work their way up the social and economic ladder with dignity and pride.
             </p>
 
             {/* Paragraph 2 */}
-            <p className="font-['Montserrat',sans-serif] text-[#555555] text-[13.5px] sm:text-[14.5px] leading-[1.75] text-justify">
+            <p className="font-['Montserrat',sans-serif] text-[#555555] text-[13.5px] sm:text-[14.5px] leading-[1.75] text-left sm:text-justify">
               The Nyas is conducting the trainings under the banner – Samarth Bharat . BDSN will provide pathways for re-skilling and up-skilling youth in the pre-identified sectors. The idea is to either enable them to transit into formal sector employment post training through the developed network of quality instructors or to help the enthusiastic and capable candidates to begin an entrepreneurial journey in their field of training. We are primarily focusing on hand skill based works such as: Electrician; AC, Washing Machine Technician; Beautician, Hair Stylist, Smartphones Repair Technician, CCTV technician etc.
             </p>
           </div>
@@ -62,7 +62,7 @@ export default function SamarthBharatIntro() {
               Our mission
             </h2>
 
-            <div className="space-y-5 font-['Montserrat',sans-serif] text-white/95 text-[14px] sm:text-[15px] leading-[1.85] text-justify">
+            <div className="space-y-5 font-['Montserrat',sans-serif] text-white/95 text-[14px] sm:text-[15px] leading-[1.85] text-left sm:text-justify">
               <p>
                 Our aim is to reach out to weaker and unprivileged persons of the society and to propagate aspirational values among youth.
               </p>
@@ -98,7 +98,7 @@ export default function SamarthBharatIntro() {
                 Our Aim
               </h2>
 
-              <p className="font-['Montserrat',sans-serif] text-white/95 text-[14px] sm:text-[15px] leading-[1.85] text-justify">
+              <p className="font-['Montserrat',sans-serif] text-white/95 text-[14px] sm:text-[15px] leading-[1.85] text-left sm:text-justify">
                 As our Hon’ble Prime Minister said, “Corona crisis has also taught us the importance of local supply chains, local markets have stepped in to help us. Time has taught us that we need to start thinking about local and buying local. Many global brands once started locally. With the passage of time, and public demand and marketing, these brands became global. We need to be vocal about our local products by not only buying but also publicising them.” Quoting from Vedas, PM explained the importance of self-reliance,” Sarvam Aatmam Vasham Sukham. That which is in your control gives you happiness. We have to move ahead with new energy. Only we can make India self-reliant.”
               </p>
             </div>
