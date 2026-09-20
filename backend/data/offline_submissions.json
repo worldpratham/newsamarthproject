@@ -1,0 +1,59 @@
+{
+  "enrollments": [
+    {
+      "fullName": "Test Candidate",
+      "dateOfBirth": "2000-01-01",
+      "fatherName": "Father Name",
+      "motherName": "Mother Name",
+      "phone": "9876543210",
+      "email": "test@example.com",
+      "qualification": "Graduate",
+      "course": "AC/Refrigerator Repairing",
+      "address": "Delhi NCR",
+      "message": "",
+      "_id": "offline_1789124661900",
+      "createdAt": "2026-09-11T11:04:21.901Z"
+    }
+  ],
+  "donations": [
+    {
+      "fullName": "Test Donor",
+      "phone": "9876543210",
+      "email": "donor@example.com",
+      "amount": 5000,
+      "panNumber": "ABCDE1234F",
+      "companyOrOrg": "",
+      "addressWithPin": "New Delhi 110001",
+      "message": "",
+      "paymentStatus": "pending",
+      "_id": "offline_1789124661920",
+      "createdAt": "2026-09-11T11:04:21.920Z"
+    }
+  ],
+  "volunteers": [
+    {
+      "fullName": "Test Volunteer",
+      "occupation": "Software Engineer",
+      "address": "Delhi",
+      "mobile": "9876543210",
+      "email": "vol@example.com",
+      "department": "Teaching & Training",
+      "message": "",
+      "status": "onboarding",
+      "_id": "offline_1789124661927",
+      "createdAt": "2026-09-11T11:04:21.927Z"
+    }
+  ],
+  "contacts": [
+    {
+      "firstName": "Test Inquirer",
+      "lastName": "Admission Inquiry",
+      "mobile": "9876543210",
+      "email": "inq@example.com",
+      "message": "Hello, when is the next batch starting?",
+      "isResolved": false,
+      "_id": "offline_1789124661933",
+      "createdAt": "2026-09-11T11:04:21.933Z"
+    }
+  ]
+}
