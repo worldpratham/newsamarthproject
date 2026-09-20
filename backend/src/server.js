@@ -43,10 +43,12 @@ app.get('/api/health', (req, res) => {
   });
 });
 
-// Fallback for SPA/MPA routes to frontend index
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../frontend/index.html'));
-});
+// Fallback for SPA/MPA routes to frontend index (local dev only)
+if (!process.env.VERCEL) {
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../../frontend/index.html'));
+  });
+}
 
 // Global Error Handler
 app.use((err, req, res, next) => {
@@ -58,6 +60,11 @@ app.use((err, req, res, next) => {
 });
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`🚀 [Samarth Bharat Server]: Running on http://localhost:${PORT}`);
-});
+
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`🚀 [Samarth Bharat Server]: Running on http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;
