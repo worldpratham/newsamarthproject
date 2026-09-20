@@ -468,11 +468,11 @@ export default function Home() {
       {/* Hero Section (Authentic WordPress Design from samarthbharat.net) */}
       <section className="relative bg-white">
         {/* Banner Graphic (Empowering Skills, Transforming Lives + Trainees Collage) */}
-        <div className="w-full relative bg-white">
+        <div className="w-full relative bg-white overflow-hidden">
           <img
             src="/banner-1.webp"
             alt="Empowering Skills, Transforming Lives - Samarth Bharat"
-            className="w-full h-auto object-cover min-h-[300px] md:min-h-[440px] lg:min-h-[500px]"
+            className="w-full h-auto object-contain sm:object-cover sm:min-h-[300px] md:min-h-[440px] lg:min-h-[500px]"
             onError={(e) => {
               (e.target as HTMLImageElement).src =
                 'https://samarthbharat.net/wp-content/uploads/2025/05/banner-1-scaled.webp';
@@ -481,7 +481,7 @@ export default function Home() {
         </div>
 
         {/* Three Pillars Blue Banner (Skill Development, Certification, Livelihood Opportunities) */}
-        <div className="container-page -mt-8 sm:-mt-12 md:-mt-20 lg:-mt-24 relative z-20 pb-12">
+        <div className="container-page mt-3 sm:-mt-12 md:-mt-20 lg:-mt-24 relative z-20 pb-12">
           <div className="bg-[#001C5C] text-white rounded-xl shadow-2xl p-6 md:p-8 lg:p-9">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 lg:gap-8 items-start divide-y md:divide-y-0 md:divide-x divide-white/20">
               {/* 1. Skill Development */}
