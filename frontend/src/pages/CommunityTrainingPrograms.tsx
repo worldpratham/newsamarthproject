@@ -476,12 +476,7 @@ export default function CommunityTrainingPrograms() {
             <h2 className="font-['Times_New_Roman',serif] text-[#001C5C] text-3xl sm:text-4xl md:text-[40px] font-semibold leading-tight">
               Community Training Centers
             </h2>
-            {isLiveCenters && (
-              <span className="inline-flex items-center gap-1.5 mt-2 px-3 py-0.5 bg-green-50 text-green-700 rounded-full text-xs font-medium">
-                <Sparkles size={12} className="text-green-600" />
-                Data fetched via API ({centers.length} Centers)
-              </span>
-            )}
+      
           </div>
 
           {/* Top ENROLL NOW Button on Left matching WordPress */}

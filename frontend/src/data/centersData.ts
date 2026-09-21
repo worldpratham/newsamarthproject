@@ -1,4 +1,6 @@
-[
+import { CenterApiModel } from '@/services/courseApi';
+
+export const FALLBACK_CENTERS: CenterApiModel[] = [
   {
     "state": "Delhi",
     "trainingName": "AC/Refrigerator/RO",
@@ -665,4 +667,4 @@
     "contactPhone": "8595887700",
     "isActive": true
   }
-]
+];

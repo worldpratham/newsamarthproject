@@ -1,3 +1,5 @@
+import { FALLBACK_CENTERS } from '@/data/centersData';
+
 export interface CourseModule {
   moduleNumber?: number;
   title: string;
@@ -27,6 +29,7 @@ export interface CenterApiModel {
   _id?: string;
   state: string;
   trainingName: string;
+  pincode?: string;
   address: string;
   googleLocationUrl: string;
   contactPhone?: string;
@@ -187,7 +190,12 @@ export async function getCentersForTraining(trainingName?: string): Promise<Cent
       console.error('Fallback centers call failed:', fallbackError);
     }
 
-    return [];
+    if (trainingName) {
+      return FALLBACK_CENTERS.filter((c) =>
+        c.trainingName.toLowerCase().includes(trainingName.toLowerCase())
+      );
+    }
+    return FALLBACK_CENTERS;
   }
 }
 
@@ -244,7 +252,12 @@ export async function getAllCenters(filters?: {
     }
   }
 
-  return { centers: [], states: [], trainings: [] };
+  // Final fallback to static verified centers
+  return {
+    centers: FALLBACK_CENTERS,
+    states: [...new Set(FALLBACK_CENTERS.map((c) => c.state))].sort(),
+    trainings: [...new Set(FALLBACK_CENTERS.map((c) => c.trainingName))].sort(),
+  };
 }
 
 export interface PostApiModel {

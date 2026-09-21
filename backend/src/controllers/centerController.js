@@ -24,7 +24,8 @@ exports.getCenters = async (req, res) => {
         query.$or = [
           { address: new RegExp(search, 'i') },
           { trainingName: new RegExp(search, 'i') },
-          { state: new RegExp(search, 'i') }
+          { state: new RegExp(search, 'i') },
+          { pincode: new RegExp(search, 'i') }
         ];
       }
 
@@ -54,7 +55,8 @@ exports.getCenters = async (req, res) => {
       centers = centers.filter(c =>
         (c.address && c.address.toLowerCase().includes(s)) ||
         (c.trainingName && c.trainingName.toLowerCase().includes(s)) ||
-        (c.state && c.state.toLowerCase().includes(s))
+        (c.state && c.state.toLowerCase().includes(s)) ||
+        (c.pincode && c.pincode.toLowerCase().includes(s))
       );
     }
 

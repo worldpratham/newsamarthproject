@@ -14,6 +14,11 @@ const centerSchema = new mongoose.Schema(
       trim: true,
       index: true
     },
+    pincode: {
+      type: String,
+      trim: true,
+      default: ''
+    },
     address: {
       type: String,
       required: true,
