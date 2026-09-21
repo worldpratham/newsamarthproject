@@ -215,14 +215,32 @@ export default function CourseDetail() {
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+    if (name === 'phone') {
+      const digitsOnly = value.replace(/\D/g, '').slice(0, 10);
+      setFormData((prev) => ({ ...prev, phone: digitsOnly }));
+    } else {
+      setFormData((prev) => ({ ...prev, [name]: value }));
+    }
+    if (submitError) setSubmitError(null);
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitting(true);
     setSubmitError(null);
     setSubmitSuccess(false);
+
+    const cleanPhone = formData.phone.replace(/\D/g, '');
+    if (cleanPhone.length !== 10) {
+      setSubmitError('Please enter a valid 10-digit mobile number.');
+      return;
+    }
+
+    if (formData.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email.trim())) {
+      setSubmitError('Please enter a valid email address.');
+      return;
+    }
+
+    setSubmitting(true);
 
     try {
       const res = await fetch('/api/enrollments', {
@@ -687,6 +705,8 @@ export default function CourseDetail() {
                   </label>
                   <input
                     type="tel"
+                    inputMode="numeric"
+                    maxLength={10}
                     name="phone"
                     required
                     value={formData.phone}

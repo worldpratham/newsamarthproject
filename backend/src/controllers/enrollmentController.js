@@ -20,12 +20,27 @@ exports.createEnrollment = async (req, res) => {
       message
     } = req.body;
 
-    const contactPhone = phone || mobile;
+    const contactPhone = (phone || mobile || '').toString().replace(/\D/g, '');
 
     if (!fullName || !dateOfBirth || !fatherName || !motherName || !contactPhone || !course || !address) {
       return res.status(400).json({
         success: false,
         message: 'Please provide all required fields: Full Name, DOB, Father Name, Mother Name, Phone, Course, Address'
+      });
+    }
+
+    if (contactPhone.length !== 10) {
+      return res.status(400).json({
+        success: false,
+        message: 'Please provide a valid 10-digit mobile number'
+      });
+    }
+
+    const cleanEmail = (email || '').trim().toLowerCase();
+    if (cleanEmail && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(cleanEmail)) {
+      return res.status(400).json({
+        success: false,
+        message: 'Please provide a valid email address'
       });
     }
 

@@ -177,6 +177,17 @@ export default function CentresDetails() {
     e.preventDefault();
     setEnrollError('');
 
+    const cleanPhone = (enrollForm.phone || '').replace(/\D/g, '');
+    if (cleanPhone.length !== 10) {
+      setEnrollError('Please enter a valid 10-digit mobile number.');
+      return;
+    }
+
+    if (enrollForm.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(enrollForm.email.trim())) {
+      setEnrollError('Please enter a valid email address.');
+      return;
+    }
+
     if (enrollForm.course === 'Select the Course' || !enrollForm.course) {
       setEnrollError('Please select a course');
       return;
@@ -189,13 +200,13 @@ export default function CentresDetails() {
       const response = await fetch(endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(enrollForm),
+        body: JSON.stringify({ ...enrollForm, phone: cleanPhone, email: enrollForm.email.trim() }),
       }).catch(async () => {
         // Fallback to localhost if remote fails
         return await fetch('http://localhost:5000/api/enrollments', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(enrollForm),
+          body: JSON.stringify({ ...enrollForm, phone: cleanPhone, email: enrollForm.email.trim() }),
         });
       });
 
@@ -695,10 +706,17 @@ export default function CentresDetails() {
                         <Phone size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
                         <input
                           type="tel"
+                          inputMode="numeric"
+                          maxLength={10}
                           required
-                          placeholder="Phone Number"
+                          placeholder="10-digit mobile number"
                           value={enrollForm.phone}
-                          onChange={(e) => setEnrollForm({ ...enrollForm, phone: e.target.value })}
+                          onChange={(e) =>
+                            setEnrollForm({
+                              ...enrollForm,
+                              phone: e.target.value.replace(/\D/g, '').slice(0, 10),
+                            })
+                          }
                           className="w-full pl-9 pr-3 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:border-[#001C5C]"
                         />
                       </div>

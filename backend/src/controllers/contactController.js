@@ -7,8 +7,9 @@ const { isDbConnected, saveOffline } = require('../utils/saveSubmission');
 exports.createContactMessage = async (req, res) => {
   try {
     const { name, fullName, firstName, lastName, mobile, phone, email, subject, message } = req.body;
-    const cName = name || fullName || (firstName ? `${firstName} ${lastName || ''}`.trim() : '');
-    const cPhone = mobile || phone;
+    const cName = (name || fullName || (firstName ? `${firstName} ${lastName || ''}`.trim() : '')).trim();
+    const cPhone = (mobile || phone || '').toString().replace(/\D/g, '');
+    const cEmail = (email || '').trim().toLowerCase();
 
     if (!cName || !cPhone) {
       return res.status(400).json({
@@ -17,11 +18,25 @@ exports.createContactMessage = async (req, res) => {
       });
     }
 
+    if (cPhone.length !== 10) {
+      return res.status(400).json({
+        success: false,
+        message: 'Please provide a valid 10-digit mobile number'
+      });
+    }
+
+    if (cEmail && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(cEmail)) {
+      return res.status(400).json({
+        success: false,
+        message: 'Please provide a valid email address'
+      });
+    }
+
     const payload = {
       firstName: cName,
       lastName: subject || '',
       mobile: cPhone,
-      email: email || '',
+      email: cEmail,
       message: message || (subject ? `[Subject: ${subject}]` : ''),
       isResolved: false
     };

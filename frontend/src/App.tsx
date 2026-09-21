@@ -104,7 +104,11 @@ export default function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/gallery/" element={<Gallery />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/contact-us/" element={<ContactUs />} />
           <Route path="/donate-us" element={<DonateUs />} />
+          <Route path="/donate-us/" element={<DonateUs />} />
+          <Route path="/donate" element={<DonateUs />} />
+          <Route path="/donate/" element={<DonateUs />} />
           <Route path="/:slug" element={<CourseDetail />} />
           <Route path="/:slug/" element={<CourseDetail />} />
           <Route path="*" element={<NotFound />} />

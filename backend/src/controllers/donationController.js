@@ -8,34 +8,72 @@ exports.createDonation = async (req, res) => {
   try {
     const {
       fullName,
+      name,
       phone,
       mobile,
       email,
       amount,
       panNumber,
+      pan,
       companyOrOrg,
+      organization,
       addressWithPin,
+      address,
       message
     } = req.body;
 
-    const contactPhone = phone || mobile;
+    const donorName = (fullName || name || '').trim();
+    let contactPhone = (phone || mobile || '').toString().replace(/\D/g, '');
+    const cleanPan = (panNumber || pan || '').toString().trim().toUpperCase();
+    const donorAddress = (addressWithPin || address || '').trim();
+    const donorEmail = (email || '').trim().toLowerCase();
+    const donationAmount = Number(amount);
 
-    if (!fullName || !contactPhone || !amount || !panNumber || !addressWithPin) {
+    if (!donorName) {
+      return res.status(400).json({ success: false, message: 'Please provide donor Full Name' });
+    }
+
+    if (!contactPhone || contactPhone.length !== 10) {
       return res.status(400).json({
         success: false,
-        message: 'Please provide all required fields: Full Name, Phone, Amount, PAN Number, Address with PIN'
+        message: 'Please provide a valid 10-digit mobile number'
+      });
+    }
+
+    if (donorEmail && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(donorEmail)) {
+      return res.status(400).json({
+        success: false,
+        message: 'Please provide a valid email address'
+      });
+    }
+
+    if (!donationAmount || isNaN(donationAmount) || donationAmount <= 0) {
+      return res.status(400).json({ success: false, message: 'Please provide a valid donation amount' });
+    }
+
+    if (!cleanPan) {
+      return res.status(400).json({
+        success: false,
+        message: 'PAN Number is required for 80G tax exemption receipt'
+      });
+    }
+
+    if (!donorAddress) {
+      return res.status(400).json({
+        success: false,
+        message: 'Address with PIN code is required for 80G tax exemption receipt'
       });
     }
 
     const payload = {
-      fullName,
+      fullName: donorName,
       phone: contactPhone,
-      email: email || '',
-      amount: Number(amount),
-      panNumber: panNumber.toUpperCase(),
-      companyOrOrg: companyOrOrg || '',
-      addressWithPin,
-      message: message || '',
+      email: donorEmail,
+      amount: donationAmount,
+      panNumber: cleanPan,
+      companyOrOrg: (companyOrOrg || organization || '').trim(),
+      addressWithPin: donorAddress,
+      message: (message || '').trim(),
       paymentStatus: 'pending'
     };
 
@@ -49,9 +87,8 @@ exports.createDonation = async (req, res) => {
 
     res.status(201).json({
       success: true,
-      message: 'Donation details recorded successfully. Proceed to scan QR code.',
-      data: result,
-      redirectUrl: '/donate-now.html'
+      message: 'Donation request submitted successfully! Thank you for supporting Samarth Bharat.',
+      data: result
     });
   } catch (error) {
     res.status(500).json({
