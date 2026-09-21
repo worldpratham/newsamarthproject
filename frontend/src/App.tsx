@@ -16,10 +16,31 @@ import ContactUs from '@/pages/ContactUs';
 import DonateUs from '@/pages/DonateUs';
 import NotFound from '@/pages/NotFound';
 
+// Admin Panel Pages
+import AdminLogin from '@/pages/admin/AdminLogin';
+import AdminLayout from '@/pages/admin/AdminLayout';
+import AdminDashboard from '@/pages/admin/AdminDashboard';
+import AdminCourses from '@/pages/admin/AdminCourses';
+import AdminEnrollments from '@/pages/admin/AdminEnrollments';
+import AdminDonations from '@/pages/admin/AdminDonations';
+import AdminLeads from '@/pages/admin/AdminLeads';
+
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
+        {/* Admin Panel Routes */}
+        <Route path="/admin/login" element={<AdminLogin />} />
+        <Route path="/admin" element={<AdminLayout />}>
+          <Route index element={<AdminDashboard />} />
+          <Route path="dashboard" element={<AdminDashboard />} />
+          <Route path="courses" element={<AdminCourses />} />
+          <Route path="enrollments" element={<AdminEnrollments />} />
+          <Route path="donations" element={<AdminDonations />} />
+          <Route path="leads" element={<AdminLeads />} />
+        </Route>
+
+        {/* Public Website Routes */}
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

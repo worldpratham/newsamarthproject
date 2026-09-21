@@ -99,3 +99,83 @@ exports.getEnrollments = async (req, res) => {
     });
   }
 };
+
+// @desc    Update enrollment status
+// @route   PATCH /api/enrollments/:id/status
+// @access  Admin
+exports.updateEnrollmentStatus = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { status } = req.body;
+
+    const validStatuses = ['pending', 'contacted', 'enrolled', 'cancelled'];
+    if (!validStatuses.includes(status)) {
+      return res.status(400).json({
+        success: false,
+        message: `Invalid status. Must be one of: ${validStatuses.join(', ')}`
+      });
+    }
+
+    if (isDbConnected()) {
+      const enrollment = await Enrollment.findByIdAndUpdate(
+        id,
+        { status },
+        { new: true, runValidators: true }
+      );
+      if (!enrollment) {
+        return res.status(404).json({ success: false, message: 'Enrollment not found' });
+      }
+      return res.status(200).json({ success: true, data: enrollment });
+    }
+
+    // Offline fallback update
+    const fs = require('fs');
+    const path = require('path');
+    const offlineFile = path.join(__dirname, '../../data/offline_submissions.json');
+    if (fs.existsSync(offlineFile)) {
+      const all = JSON.parse(fs.readFileSync(offlineFile, 'utf8') || '{}');
+      if (all.enrollments && Array.isArray(all.enrollments)) {
+        const item = all.enrollments.find((e, idx) => (e._id === id || String(idx) === id));
+        if (item) item.status = status;
+        fs.writeFileSync(offlineFile, JSON.stringify(all, null, 2));
+      }
+    }
+
+    res.status(200).json({ success: true, data: { _id: id, status } });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
+// @desc    Delete enrollment
+// @route   DELETE /api/enrollments/:id
+// @access  Admin
+exports.deleteEnrollment = async (req, res) => {
+  try {
+    const { id } = req.params;
+    if (isDbConnected()) {
+      const enrollment = await Enrollment.findByIdAndDelete(id);
+      if (!enrollment) {
+        return res.status(404).json({ success: false, message: 'Enrollment not found' });
+      }
+      return res.status(200).json({ success: true, message: 'Enrollment removed' });
+    }
+
+    // Offline fallback delete
+    const fs = require('fs');
+    const path = require('path');
+    const offlineFile = path.join(__dirname, '../../data/offline_submissions.json');
+    if (fs.existsSync(offlineFile)) {
+      const all = JSON.parse(fs.readFileSync(offlineFile, 'utf8') || '{}');
+      if (all.enrollments) {
+        all.enrollments = all.enrollments.filter((e, idx) => e._id !== id && String(idx) !== id);
+        fs.writeFileSync(offlineFile, JSON.stringify(all, null, 2));
+      }
+    }
+
+    res.status(200).json({ success: true, message: 'Enrollment removed' });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+

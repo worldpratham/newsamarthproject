@@ -24,6 +24,7 @@ app.use(express.static(path.join(__dirname, '../../frontend'), {
 }));
 
 // API Routes
+app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/enrollments', require('./routes/enrollmentRoutes'));
 app.use('/api/donations', require('./routes/donationRoutes'));
 app.use('/api/volunteers', require('./routes/volunteerRoutes'));

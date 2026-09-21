@@ -226,6 +226,20 @@ export default function Footer() {
           </div>
         </div>
       </div>
+
+      {/* Bottom Sub-Footer with Admin Portal link */}
+      <div className="relative z-10 border-t border-white/10 bg-black/25 py-4 text-xs text-white/60">
+        <div className="container-page flex flex-col sm:flex-row items-center justify-between gap-3">
+          <p>© {new Date().getFullYear()} Samarth Bharat (Bhaorao Deoras Seva Nyas). All Rights Reserved.</p>
+          <div className="flex items-center gap-4">
+            <Link to="/contact-us" className="hover:text-[#F87902] transition-colors">Contact Support</Link>
+            <span>•</span>
+            <Link to="/admin/login" className="text-white/40 hover:text-amber-400 transition-colors inline-flex items-center gap-1">
+              <span>Admin Portal</span>
+            </Link>
+          </div>
+        </div>
+      </div>
     </footer>
   );
 }
