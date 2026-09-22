@@ -253,16 +253,16 @@ export default function EventDetail() {
                 }}
               >
                 <iframe
-                  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsamarthbharatofficial&tabs=timeline&width=340&height=360&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+                  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsamarthbharatofficial&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
                   width="100%"
-                  height="360"
-                  style={{ border: 'none', overflow: 'hidden' }}
+                  height="500"
+                  style={{ border: 'none', overflow: 'hidden', height: '500px', minHeight: '500px' }}
                   scrolling="no"
                   frameBorder="0"
                   allowFullScreen={true}
                   allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                   title="Samarth Bharat Facebook Feed"
-                  className="w-full"
+                  className="w-full h-[500px]"
                 />
               </div>
 

@@ -472,12 +472,7 @@ export default function CommunityTrainingPrograms() {
             <p className="font-['Montserrat',sans-serif] text-white/95 text-base sm:text-lg font-normal mt-2">
               Practical Training for Real-World Careers.
             </p>
-            {isLiveCourses && (
-              <span className="inline-flex items-center gap-1.5 mt-3 px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-xs font-semibold text-white">
-                <Sparkles size={13} className="text-yellow-300" />
-                Live Database Synchronized ({courses.length} Courses)
-              </span>
-            )}
+      
           </div>
 
           {loadingCourses ? (

@@ -17,9 +17,12 @@
     @apply font-sans;
     word-break: break-word;
   }
-  img, video, iframe, canvas, svg {
+  img, video, canvas, svg {
     max-width: 100%;
     height: auto;
+  }
+  iframe {
+    max-width: 100%;
   }
 }
 
