@@ -38,6 +38,7 @@ const navLinks: NavLinkItem[] = [
   { label: 'Career Development Center', path: '/career-development-center' },
   { label: 'Community Training Programs', path: '/community-training-programs' },
   { label: 'Centres Details', path: '/centres-details' },
+  { label: 'Training Center detail', path: '/training-center-detail' },
   { label: 'Events & Activities', path: '/events' },
 ];
 

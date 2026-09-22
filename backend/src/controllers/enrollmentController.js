@@ -22,10 +22,10 @@ exports.createEnrollment = async (req, res) => {
 
     const contactPhone = (phone || mobile || '').toString().replace(/\D/g, '');
 
-    if (!fullName || !dateOfBirth || !fatherName || !motherName || !contactPhone || !course || !address) {
+    if (!fullName || !contactPhone || !course || !address) {
       return res.status(400).json({
         success: false,
-        message: 'Please provide all required fields: Full Name, DOB, Father Name, Mother Name, Phone, Course, Address'
+        message: 'Please provide required fields: Full Name, Phone, Course, Address'
       });
     }
 
@@ -45,12 +45,12 @@ exports.createEnrollment = async (req, res) => {
     }
 
     const payload = {
-      fullName,
-      dateOfBirth,
-      fatherName,
-      motherName,
+      fullName: (fullName || '').trim(),
+      dateOfBirth: (dateOfBirth && !isNaN(new Date(dateOfBirth).getTime())) ? new Date(dateOfBirth) : null,
+      fatherName: (fatherName || '').trim(),
+      motherName: (motherName || '').trim(),
       phone: contactPhone,
-      email: email || '',
+      email: cleanEmail,
       qualification: qualification || '',
       course,
       address,

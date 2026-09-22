@@ -12,6 +12,7 @@ import SuccessStories from '@/pages/SuccessStories';
 import Gallery from '@/pages/Gallery';
 import CareerDevelopmentCenter from '@/pages/CareerDevelopmentCenter';
 import CentresDetails from '@/pages/CentresDetails';
+import TrainingCenterDetail from '@/pages/TrainingCenterDetail';
 import ContactUs from '@/pages/ContactUs';
 import DonateUs from '@/pages/DonateUs';
 import NotFound from '@/pages/NotFound';
@@ -87,6 +88,10 @@ export default function App() {
           <Route path="/career-development-center/" element={<CareerDevelopmentCenter />} />
           <Route path="/career-development-centre" element={<CareerDevelopmentCenter />} />
           <Route path="/career-development-centre/" element={<CareerDevelopmentCenter />} />
+          <Route path="/training-center-detail" element={<TrainingCenterDetail />} />
+          <Route path="/training-center-detail/" element={<TrainingCenterDetail />} />
+          <Route path="/training-center-details" element={<TrainingCenterDetail />} />
+          <Route path="/training-center-details/" element={<TrainingCenterDetail />} />
           <Route path="/centres-details" element={<CentresDetails />} />
           <Route path="/centres-details/" element={<CentresDetails />} />
           <Route path="/centers-details" element={<CentresDetails />} />

@@ -9,17 +9,17 @@ const enrollmentSchema = new mongoose.Schema(
     },
     dateOfBirth: {
       type: Date,
-      required: [true, 'Date of Birth is required']
+      default: null
     },
     fatherName: {
       type: String,
-      required: [true, "Father's Name is required"],
-      trim: true
+      trim: true,
+      default: ''
     },
     motherName: {
       type: String,
-      required: [true, "Mother's Name is required"],
-      trim: true
+      trim: true,
+      default: ''
     },
     phone: {
       type: String,
