@@ -3,11 +3,10 @@ import { Link } from 'react-router-dom';
 import { Loader2 } from 'lucide-react';
 import {
   EventItem,
-  yearlyReports,
-  monthlyReports,
   wpEventsData,
 } from '@/data/eventsData';
 import { getPosts, PostApiModel } from '@/services/courseApi';
+import { getReports, ReportApiModel } from '@/services/reportApi';
 
 // Fallback images map for clean fallback
 const LOCAL_EVENT_IMAGES: Record<string, string> = {
@@ -41,10 +40,32 @@ export default function Events() {
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const [loading, setLoading] = useState(false);
+  const [yearlyReportsList, setYearlyReportsList] = useState<ReportApiModel[]>([]);
+  const [monthlyReportsList, setMonthlyReportsList] = useState<ReportApiModel[]>([]);
 
   useEffect(() => {
     document.title = 'Events - Samarth Bharat';
     window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    let isMounted = true;
+    async function fetchReportsData() {
+      try {
+        const [yearly, monthly] = await Promise.all([
+          getReports('yearly'),
+          getReports('monthly'),
+        ]);
+        if (isMounted) {
+          setYearlyReportsList(yearly);
+          setMonthlyReportsList(monthly);
+        }
+      } catch (err) {
+        console.error('[Events Page] Error fetching reports:', err);
+      }
+    }
+    fetchReportsData();
+    return () => {
+      isMounted = false;
+    };
   }, []);
 
   useEffect(() => {
@@ -340,8 +361,8 @@ export default function Events() {
                 </h4>
 
                 <ul className="space-y-1.5 p-0 m-0 list-none">
-                  {yearlyReports.map((report) => (
-                    <li key={report.label} className="elementor-icon-list-item">
+                  {yearlyReportsList.map((report) => (
+                    <li key={report._id || report.label} className="elementor-icon-list-item">
                       <a
                         href={report.url}
                         target="_blank"
@@ -367,7 +388,7 @@ export default function Events() {
                 </h4>
 
                 <ul className="space-y-1.5 p-0 m-0 list-none max-h-[620px] overflow-y-auto pr-2 custom-scrollbar">
-                  {monthlyReports.map((report, idx) => {
+                  {monthlyReportsList.map((report, idx) => {
                     if (report.isYearHeader) {
                       return (
                         <li key={`year-${report.label}-${idx}`} className="pt-3 pb-1">
@@ -384,7 +405,7 @@ export default function Events() {
                     }
 
                     return (
-                      <li key={`report-${report.label}-${idx}`} className="elementor-icon-list-item">
+                      <li key={report._id || `report-${report.label}-${idx}`} className="elementor-icon-list-item">
                         <a
                           href={report.url}
                           target="_blank"

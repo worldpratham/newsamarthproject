@@ -10,6 +10,7 @@ const Course = require('../models/Course');
 const College = require('../models/College');
 const Story = require('../models/Story');
 const Post = require('../models/Post');
+const Gallery = require('../models/Gallery');
 const Enrollment = require('../models/Enrollment');
 const Donation = require('../models/Donation');
 const Volunteer = require('../models/Volunteer');
@@ -20,6 +21,7 @@ const courses = require('./coursesData.json');
 const colleges = require('./collegesData.json');
 const stories = require('./storiesData.json');
 const posts = require('./postsData.json');
+const gallery = require('./galleryData.json');
 
 const seedDatabase = async () => {
   try {
@@ -35,7 +37,8 @@ const seedDatabase = async () => {
       Course.deleteMany({}),
       College.deleteMany({}),
       Story.deleteMany({}),
-      Post.deleteMany({})
+      Post.deleteMany({}),
+      Gallery.deleteMany({})
     ]);
 
     // Insert seeds
@@ -53,6 +56,9 @@ const seedDatabase = async () => {
 
     console.log(`Inserting ${posts.length} Blog Posts...`);
     await Post.insertMany(posts);
+
+    console.log(`Inserting ${gallery.length} Gallery items...`);
+    await Gallery.insertMany(gallery);
 
     // Sync any offline submissions if they exist
     const offlineFile = path.join(__dirname, '../../data/offline_submissions.json');

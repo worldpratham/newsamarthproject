@@ -9,7 +9,8 @@ async function ensureDbCentersSynced() {
     const count = await Center.countDocuments();
     // If no centers or old schema without images
     const sample = await Center.findOne({ images: { $exists: true, $ne: [] } });
-    if (count !== seedCenters.length || !sample) {
+    const hasOutdatedData = await Center.findOne({ centerName: /JIND/i, city: 'Delhi' });
+    if (count !== seedCenters.length || !sample || hasOutdatedData) {
       console.log(`🔄 [Centers]: Seeding/updating centers in MongoDB with all ${seedCenters.length} centers...`);
       await Center.deleteMany({});
       await Center.insertMany(seedCenters);

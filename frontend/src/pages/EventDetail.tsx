@@ -3,11 +3,10 @@ import { useParams, useLocation, Link } from 'react-router-dom';
 import { Calendar, ArrowLeft, ChevronRight, Loader2, MapPin } from 'lucide-react';
 import {
   wpEventsData,
-  yearlyReports,
-  monthlyReports,
   EventItem,
 } from '@/data/eventsData';
 import { getPostBySlug, PostApiModel } from '@/services/courseApi';
+import { getReports, ReportApiModel } from '@/services/reportApi';
 
 const LOCAL_EVENT_IMAGES: Record<string, string> = {
   'workshop-reportfoundation-of-innovation-workshop-16-18-february-2026organized-under-the-aegis-of-the-career-development-centre':
@@ -39,6 +38,30 @@ export default function EventDetail() {
 
   const [apiPost, setApiPost] = useState<PostApiModel | null>(null);
   const [loading, setLoading] = useState(true);
+  const [yearlyReportsList, setYearlyReportsList] = useState<ReportApiModel[]>([]);
+  const [monthlyReportsList, setMonthlyReportsList] = useState<ReportApiModel[]>([]);
+
+  useEffect(() => {
+    let isMounted = true;
+    async function fetchReportsData() {
+      try {
+        const [yearly, monthly] = await Promise.all([
+          getReports('yearly'),
+          getReports('monthly'),
+        ]);
+        if (isMounted) {
+          setYearlyReportsList(yearly);
+          setMonthlyReportsList(monthly);
+        }
+      } catch (err) {
+        console.error('[EventDetail] Error fetching reports:', err);
+      }
+    }
+    fetchReportsData();
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -275,8 +298,8 @@ export default function EventDetail() {
                   Yearly Reports
                 </h4>
                 <ul className="space-y-1.5 p-0 m-0 list-none">
-                  {yearlyReports.map((report) => (
-                    <li key={report.label} className="elementor-icon-list-item">
+                  {yearlyReportsList.map((report) => (
+                    <li key={report._id || report.label} className="elementor-icon-list-item">
                       <a
                         href={report.url}
                         target="_blank"
@@ -307,7 +330,7 @@ export default function EventDetail() {
                   Monthly Reports
                 </h4>
                 <ul className="space-y-1.5 p-0 m-0 list-none max-h-[620px] overflow-y-auto pr-2 custom-scrollbar">
-                  {monthlyReports.map((report, idx) => {
+                  {monthlyReportsList.map((report, idx) => {
                     if (report.isYearHeader) {
                       return (
                         <li key={`year-${report.label}-${idx}`} className="pt-3 pb-1">
@@ -324,7 +347,7 @@ export default function EventDetail() {
                     }
 
                     return (
-                      <li key={`report-${report.label}-${idx}`} className="elementor-icon-list-item">
+                      <li key={report._id || `report-${report.label}-${idx}`} className="elementor-icon-list-item">
                         <a
                           href={report.url}
                           target="_blank"

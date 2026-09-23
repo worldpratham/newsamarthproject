@@ -1225,7 +1225,7 @@
   },
   {
     "centerName": "DISTRICT - JIND - Welding Training Center",
-    "city": "Delhi",
+    "city": "Gurugram & Haryana",
     "state": "Haryana",
     "courses": [
       "Welding"
@@ -1429,7 +1429,7 @@
   },
   {
     "centerName": "Jalandhar - GDA Training Center",
-    "city": "Delhi",
+    "city": "Punjab",
     "state": "Punjab",
     "courses": [
       "GDA"
@@ -2211,7 +2211,7 @@
   },
   {
     "centerName": "District -Mathura - AC/Refrigerator/RO Training Center",
-    "city": "Delhi",
+    "city": "Mathura",
     "state": "Uttar Pradesh",
     "courses": [
       "AC/Refrigerator/RO"
@@ -2313,7 +2313,7 @@
   },
   {
     "centerName": "District Deoria - AC/Refrigerator/RO Training Center",
-    "city": "Delhi",
+    "city": "Deoria",
     "state": "Uttar Pradesh",
     "courses": [
       "AC/Refrigerator/RO"

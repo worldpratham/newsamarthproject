@@ -1227,7 +1227,7 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
   },
   {
     "centerName": "DISTRICT - JIND - Welding Training Center",
-    "city": "Delhi",
+    "city": "Gurugram & Haryana",
     "state": "Haryana",
     "courses": [
       "Welding"
@@ -1431,7 +1431,7 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
   },
   {
     "centerName": "Jalandhar - GDA Training Center",
-    "city": "Delhi",
+    "city": "Punjab",
     "state": "Punjab",
     "courses": [
       "GDA"
@@ -2213,7 +2213,7 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
   },
   {
     "centerName": "District -Mathura - AC/Refrigerator/RO Training Center",
-    "city": "Delhi",
+    "city": "Mathura",
     "state": "Uttar Pradesh",
     "courses": [
       "AC/Refrigerator/RO"
@@ -2315,7 +2315,7 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
   },
   {
     "centerName": "District Deoria - AC/Refrigerator/RO Training Center",
-    "city": "Delhi",
+    "city": "Deoria",
     "state": "Uttar Pradesh",
     "courses": [
       "AC/Refrigerator/RO"

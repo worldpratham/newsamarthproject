@@ -27,30 +27,43 @@ import {
 } from 'lucide-react';
 import { getAllCenters, CenterApiModel, CenterVideo } from '@/services/courseApi';
 
-interface CustomDropdownOption {
+interface FilterDropdownOption {
   value: string;
   label: string;
   sublabel?: string;
 }
 
-interface CustomDropdownProps {
+interface FilterDropdownProps {
+  label: string;
+  icon: React.ReactNode;
+  iconBgColor?: string;
+  iconColor?: string;
   value: string;
   placeholder: string;
-  options: CustomDropdownOption[];
+  options: FilterDropdownOption[];
   onChange: (value: string) => void;
+  onClear?: () => void;
+  badge?: string;
   searchable?: boolean;
 }
 
-function CustomDropdown({
+function FilterDropdown({
+  label,
+  icon,
+  iconBgColor = 'bg-orange-50',
+  iconColor = 'text-[#F87902]',
   value,
   placeholder,
   options,
   onChange,
-  searchable = false,
-}: CustomDropdownProps) {
+  onClear,
+  badge,
+  searchable = true,
+}: FilterDropdownProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const containerRef = useRef<HTMLDivElement>(null);
+  const searchInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -67,6 +80,10 @@ function CustomDropdown({
   useEffect(() => {
     if (!isOpen) {
       setSearchTerm('');
+    } else {
+      setTimeout(() => {
+        searchInputRef.current?.focus();
+      }, 50);
     }
   }, [isOpen]);
 
@@ -81,83 +98,420 @@ function CustomDropdown({
   }, [options, searchTerm]);
 
   const selectedOption = options.find((opt) => opt.value === value);
+  const isSelected = value !== '' && value !== 'All';
 
   return (
     <div ref={containerRef} className={`relative w-full ${isOpen ? 'z-40' : 'z-10'}`}>
+      {/* Header Label Row */}
+      <div className="flex items-center justify-between mb-1.5 px-0.5">
+        <label className="text-[11.5px] font-bold text-slate-600 uppercase tracking-wider flex items-center gap-1.5">
+          <span className={iconColor}>{icon}</span>
+          <span>{label}</span>
+        </label>
+        {badge && (
+          <span className="text-[10.5px] font-bold text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full">
+            {badge}
+          </span>
+        )}
+      </div>
+
+      {/* Trigger Button */}
       <button
         type="button"
         onClick={() => setIsOpen((prev) => !prev)}
-        className="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 py-2.5 text-xs sm:text-sm font-medium text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#F87902] transition-all cursor-pointer flex items-center justify-between hover:bg-slate-100/80 text-left"
+        className={`w-full bg-white border rounded-xl px-3.5 py-2.5 sm:py-3 text-xs sm:text-sm font-medium transition-all cursor-pointer flex items-center justify-between shadow-xs hover:shadow-sm ${
+          isOpen
+            ? 'border-[#F87902] ring-2 ring-[#F87902]/20 shadow-sm'
+            : isSelected
+            ? 'border-orange-300 bg-orange-50/20'
+            : 'border-slate-200 hover:border-slate-300'
+        }`}
       >
-        <span
-          className={`truncate ${
-            !selectedOption || selectedOption.value === '' || selectedOption.value === 'All'
-              ? 'text-slate-700'
-              : 'text-slate-900 font-semibold'
-          }`}
-        >
-          {selectedOption ? selectedOption.label : placeholder}
-        </span>
-        <ChevronDown
-          size={16}
-          className={`shrink-0 ml-2 text-slate-500 transition-transform duration-200 ${
-            isOpen ? 'rotate-180 text-[#F87902]' : ''
-          }`}
-        />
+        <div className="flex items-center gap-2.5 min-w-0">
+          <div className={`w-7 h-7 rounded-lg flex items-center justify-center shrink-0 ${iconBgColor} ${iconColor}`}>
+            {icon}
+          </div>
+          <span
+            className={`truncate text-left ${
+              isSelected ? 'font-bold text-[#001C5C]' : 'font-medium text-slate-700'
+            }`}
+          >
+            {selectedOption ? selectedOption.label : placeholder}
+          </span>
+        </div>
+
+        <div className="flex items-center gap-1.5 shrink-0 ml-2">
+          {isSelected && (
+            <span
+              role="button"
+              tabIndex={0}
+              onClick={(e) => {
+                e.stopPropagation();
+                onChange('All');
+                onClear?.();
+              }}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.stopPropagation();
+                  onChange('All');
+                  onClear?.();
+                }
+              }}
+              className="p-1 hover:bg-slate-100 rounded-full text-slate-400 hover:text-red-500 transition-colors cursor-pointer"
+              title="Reset"
+            >
+              <X size={14} />
+            </span>
+          )}
+          <ChevronDown
+            size={16}
+            className={`text-slate-400 transition-transform duration-200 ${
+              isOpen ? 'rotate-180 text-[#F87902]' : ''
+            }`}
+          />
+        </div>
       </button>
 
+      {/* Popover */}
       {isOpen && (
-        <div className="absolute left-0 right-0 top-full mt-1.5 bg-white border border-slate-200 rounded-xl shadow-2xl max-h-64 overflow-y-auto z-50 py-1.5 focus:outline-none animate-in fade-in-50 duration-150">
+        <div className="absolute left-0 right-0 top-full mt-1.5 bg-white border border-slate-200 rounded-xl shadow-2xl max-h-72 overflow-hidden z-50 flex flex-col animate-in fade-in-50 duration-150">
           {searchable && options.length > 5 && (
-            <div className="p-2 border-b border-slate-100 sticky top-0 bg-white z-10">
+            <div className="p-2.5 border-b border-slate-100 bg-slate-50/70 sticky top-0 z-10">
               <div className="relative">
                 <input
+                  ref={searchInputRef}
                   type="text"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                   placeholder="Type to filter..."
-                  className="w-full bg-slate-50 border border-slate-200 rounded-md pl-8 pr-2.5 py-1.5 text-xs text-slate-800 focus:outline-none focus:ring-1 focus:ring-[#F87902]"
-                  autoFocus
+                  className="w-full bg-white border border-slate-200 rounded-lg pl-8 pr-7 py-1.5 text-xs text-slate-800 focus:outline-none focus:ring-1 focus:ring-[#F87902]"
                 />
                 <Search size={13} className="absolute left-2.5 top-1/2 -translate-y-1/2 text-slate-400" />
+                {searchTerm && (
+                  <button
+                    type="button"
+                    onClick={() => setSearchTerm('')}
+                    className="absolute right-2 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 p-0.5"
+                  >
+                    <X size={12} />
+                  </button>
+                )}
               </div>
             </div>
           )}
 
-          {filteredOptions.length === 0 ? (
-            <div className="px-3.5 py-3 text-xs text-slate-400 text-center">
-              No matching options found
-            </div>
-          ) : (
-            filteredOptions.map((opt) => {
-              const isSelected = opt.value === value;
-              return (
-                <button
-                  key={opt.value}
-                  type="button"
-                  onClick={() => {
-                    onChange(opt.value);
-                    setIsOpen(false);
-                  }}
-                  className={`w-full text-left px-3.5 py-2 text-xs sm:text-sm flex items-center justify-between transition-colors cursor-pointer ${
-                    isSelected
-                      ? 'bg-orange-50/80 text-[#F87902] font-semibold'
-                      : 'text-slate-700 hover:bg-slate-50 hover:text-[#001C5C]'
-                  }`}
-                >
-                  <div className="truncate pr-2">
-                    <span className="block truncate">{opt.label}</span>
-                    {opt.sublabel && (
-                      <span className="text-[11px] text-slate-400 block font-normal truncate mt-0.5">
-                        {opt.sublabel}
-                      </span>
-                    )}
-                  </div>
-                  {isSelected && <Check size={14} className="shrink-0 text-[#F87902]" />}
-                </button>
-              );
-            })
+          <div className="overflow-y-auto py-1 divide-y divide-slate-50">
+            {filteredOptions.length === 0 ? (
+              <div className="px-3.5 py-4 text-xs text-slate-400 text-center">
+                No matching options found
+              </div>
+            ) : (
+              filteredOptions.map((opt) => {
+                const isItemActive = opt.value === value;
+                return (
+                  <button
+                    key={opt.value}
+                    type="button"
+                    onClick={() => {
+                      onChange(opt.value);
+                      setIsOpen(false);
+                    }}
+                    className={`w-full text-left px-3.5 py-2.5 text-xs sm:text-sm flex items-center justify-between transition-colors cursor-pointer ${
+                      isItemActive
+                        ? 'bg-orange-50/90 text-[#F87902] font-bold'
+                        : 'text-slate-700 hover:bg-slate-50 hover:text-[#001C5C]'
+                    }`}
+                  >
+                    <div className="truncate pr-2">
+                      <span className="block truncate">{opt.label}</span>
+                      {opt.sublabel && (
+                        <span className="text-[11px] text-slate-400 block font-normal truncate mt-0.5">
+                          {opt.sublabel}
+                        </span>
+                      )}
+                    </div>
+                    {isItemActive && <Check size={14} className="shrink-0 text-[#F87902]" />}
+                  </button>
+                );
+              })
+            )}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+interface CenterSearchDropdownProps {
+  centers: CenterApiModel[];
+  selectedCenterId: string;
+  activeCenter: CenterApiModel | null;
+  onSelect: (val: string) => void;
+}
+
+function CenterSearchDropdown({
+  centers,
+  selectedCenterId,
+  activeCenter,
+  onSelect,
+}: CenterSearchDropdownProps) {
+  const [isOpen, setIsOpen] = useState(false);
+  const [searchTerm, setSearchTerm] = useState('');
+  const containerRef = useRef<HTMLDivElement>(null);
+  const searchInputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (containerRef.current && !containerRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!isOpen) {
+      setSearchTerm('');
+    } else {
+      setTimeout(() => {
+        searchInputRef.current?.focus();
+      }, 50);
+    }
+  }, [isOpen]);
+
+  const filteredCentersList = useMemo(() => {
+    if (!searchTerm.trim()) return centers;
+    const q = searchTerm.toLowerCase().trim();
+    return centers.filter((c) => {
+      const name = (c.centerName || '').toLowerCase();
+      const addr = (c.address || '').toLowerCase();
+      const city = (c.city || '').toLowerCase();
+      const pin = (c.pincode || '').toLowerCase();
+      const training = (c.trainingName || '').toLowerCase();
+      const courses = (c.courses || []).join(' ').toLowerCase();
+      return (
+        name.includes(q) ||
+        addr.includes(q) ||
+        city.includes(q) ||
+        pin.includes(q) ||
+        training.includes(q) ||
+        courses.includes(q)
+      );
+    });
+  }, [centers, searchTerm]);
+
+  // Find currently selected center object if selectedCenterId is set
+  const selectedCenterObj =
+    centers.find(
+      (c) => (c._id && c._id === selectedCenterId) || c.centerName === selectedCenterId
+    ) || (selectedCenterId && activeCenter ? activeCenter : null);
+
+  return (
+    <div ref={containerRef} className={`relative w-full ${isOpen ? 'z-40' : 'z-10'}`}>
+      {/* Trigger Button - Styled prominently like a Search Bar */}
+      <button
+        type="button"
+        onClick={() => setIsOpen((prev) => !prev)}
+        className={`w-full bg-white border rounded-xl px-4 py-3 sm:py-3.5 transition-all cursor-pointer flex items-center justify-between text-left shadow-xs hover:shadow-md ${
+          isOpen
+            ? 'border-[#F87902] ring-2 ring-[#F87902]/20 shadow-md'
+            : selectedCenterObj
+            ? 'border-orange-300 bg-orange-50/15'
+            : 'border-slate-200 hover:border-[#F87902]/50'
+        }`}
+      >
+        <div className="flex items-center gap-3 min-w-0">
+          <div
+            className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors ${
+              selectedCenterObj
+                ? 'bg-orange-500 text-white'
+                : 'bg-orange-50 text-[#F87902]'
+            }`}
+          >
+            {selectedCenterObj ? <Building2 size={18} /> : <Search size={18} />}
+          </div>
+
+          <div className="min-w-0 truncate">
+            {selectedCenterObj ? (
+              <>
+                <div className="flex items-center gap-2">
+                  <span className="font-bold text-sm sm:text-base text-[#001C5C] truncate">
+                    {selectedCenterObj.centerName}
+                  </span>
+                  <span className="shrink-0 text-[10.5px] font-bold px-2 py-0.5 rounded-full bg-orange-100 text-[#F87902]">
+                    {selectedCenterObj.city}
+                  </span>
+                </div>
+                <p className="text-xs text-slate-500 truncate flex items-center gap-1 mt-0.5">
+                  <MapPin size={11} className="text-[#F87902] shrink-0" />
+                  <span>{selectedCenterObj.address}</span>
+                </p>
+              </>
+            ) : (
+              <>
+                <span className="block font-medium text-slate-600 text-xs sm:text-sm">
+                  -- Choose Center from Dropdown --
+                </span>
+                <span className="text-[11px] text-slate-400 block truncate">
+                  Search across {centers.length} verified centers by name, address, or PIN...
+                </span>
+              </>
+            )}
+          </div>
+        </div>
+
+        <div className="flex items-center gap-2 shrink-0 ml-3">
+          {selectedCenterObj && (
+            <span
+              role="button"
+              tabIndex={0}
+              onClick={(e) => {
+                e.stopPropagation();
+                onSelect('');
+              }}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.stopPropagation();
+                  onSelect('');
+                }
+              }}
+              className="p-1.5 hover:bg-slate-100 rounded-full text-slate-400 hover:text-red-500 transition-colors cursor-pointer"
+              title="Clear selected center"
+            >
+              <X size={15} />
+            </span>
           )}
+          <span className="text-[11px] font-semibold text-slate-400 bg-slate-100 px-2.5 py-1 rounded-md hidden sm:inline-block">
+            {centers.length} Available
+          </span>
+          <ChevronDown
+            size={18}
+            className={`text-slate-400 transition-transform duration-200 ${
+              isOpen ? 'rotate-180 text-[#F87902]' : ''
+            }`}
+          />
+        </div>
+      </button>
+
+      {/* Popover Dropdown Menu */}
+      {isOpen && (
+        <div className="absolute left-0 right-0 top-full mt-2 bg-white border border-slate-200 rounded-2xl shadow-2xl max-h-80 overflow-hidden z-50 flex flex-col animate-in fade-in-50 duration-150">
+          {/* Sticky Search Header in Popover */}
+          <div className="p-3 border-b border-slate-100 bg-slate-50/90 sticky top-0 z-10 backdrop-blur-xs">
+            <div className="relative">
+              <input
+                ref={searchInputRef}
+                type="text"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                placeholder="Type center name, locality, city, pincode..."
+                className="w-full bg-white border border-slate-200 rounded-xl pl-9 pr-8 py-2 text-xs sm:text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#F87902] placeholder-slate-400 shadow-2xs"
+                autoFocus
+              />
+              <Search size={15} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
+              {searchTerm && (
+                <button
+                  type="button"
+                  onClick={() => setSearchTerm('')}
+                  className="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 p-1"
+                >
+                  <X size={14} />
+                </button>
+              )}
+            </div>
+            <div className="flex items-center justify-between mt-2 px-1 text-[11px] text-slate-500 font-medium">
+              <span>
+                {filteredCentersList.length} center{filteredCentersList.length === 1 ? '' : 's'} found
+              </span>
+              {searchTerm && (
+                <button
+                  type="button"
+                  onClick={() => setSearchTerm('')}
+                  className="text-[#F87902] hover:underline cursor-pointer"
+                >
+                  Clear search
+                </button>
+              )}
+            </div>
+          </div>
+
+          {/* Centers List */}
+          <div className="overflow-y-auto divide-y divide-slate-100 flex-1">
+            {filteredCentersList.length === 0 ? (
+              <div className="p-8 text-center text-slate-400 space-y-2">
+                <Building2 size={32} className="mx-auto text-slate-300" />
+                <p className="text-xs sm:text-sm font-medium text-slate-600">
+                  No training centers matched "{searchTerm}"
+                </p>
+                <button
+                  type="button"
+                  onClick={() => setSearchTerm('')}
+                  className="text-xs font-bold text-[#F87902] hover:underline cursor-pointer"
+                >
+                  Show all {centers.length} centers
+                </button>
+              </div>
+            ) : (
+              filteredCentersList.map((center, idx) => {
+                const val = center._id || center.centerName || String(idx);
+                const isItemSelected =
+                  (selectedCenterId &&
+                    (center._id === selectedCenterId || center.centerName === selectedCenterId)) ||
+                  (!selectedCenterId &&
+                    activeCenter &&
+                    (center._id === activeCenter._id || center.centerName === activeCenter.centerName));
+
+                return (
+                  <button
+                    key={val}
+                    type="button"
+                    onClick={() => {
+                      onSelect(val);
+                      setIsOpen(false);
+                    }}
+                    className={`w-full text-left px-4 py-3 flex items-start justify-between gap-3 transition-colors cursor-pointer ${
+                      isItemSelected
+                        ? 'bg-orange-50/80 text-[#001C5C]'
+                        : 'hover:bg-slate-50 text-slate-700'
+                    }`}
+                  >
+                    <div className="min-w-0 flex-1">
+                      <div className="flex items-center gap-2 mb-1">
+                        <span
+                          className={`text-xs sm:text-sm font-bold truncate ${
+                            isItemSelected ? 'text-[#001C5C]' : 'text-slate-900'
+                          }`}
+                        >
+                          {center.centerName}
+                        </span>
+                        <span className="shrink-0 text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-100 text-slate-600">
+                          {center.city}
+                        </span>
+                      </div>
+                      <p className="text-[11.5px] text-slate-500 truncate flex items-center gap-1">
+                        <MapPin size={11} className="text-[#F87902] shrink-0" />
+                        <span>{center.address}</span>
+                        {center.pincode && (
+                          <span className="font-mono text-slate-400">({center.pincode})</span>
+                        )}
+                      </p>
+                    </div>
+
+                    {isItemSelected && (
+                      <div className="shrink-0 self-center">
+                        <span className="w-5 h-5 rounded-full bg-[#F87902] text-white flex items-center justify-center">
+                          <Check size={12} strokeWidth={3} />
+                        </span>
+                      </div>
+                    )}
+                  </button>
+                );
+              })
+            )}
+          </div>
         </div>
       )}
     </div>
@@ -311,25 +665,16 @@ export default function TrainingCenterDetail() {
     setSelectedCenterId('');
   };
 
-  // Options for custom dropdowns
-  const cityOptions = useMemo<CustomDropdownOption[]>(() => [
+  // Options for filter dropdowns
+  const cityOptions = useMemo<FilterDropdownOption[]>(() => [
     { value: 'All', label: `Cities (${apiCities.length})` },
     ...apiCities.map((city) => ({ value: city, label: city })),
   ], [apiCities]);
 
-  const courseOptions = useMemo<CustomDropdownOption[]>(() => [
+  const courseOptions = useMemo<FilterDropdownOption[]>(() => [
     { value: 'All', label: `Courses (${apiCourses.length})` },
     ...apiCourses.map((crs) => ({ value: crs, label: crs })),
   ], [apiCourses]);
-
-  const centerOptions = useMemo<CustomDropdownOption[]>(() => [
-    { value: '', label: '-- Choose Center from Dropdown --' },
-    ...filteredCenters.map((c, i) => ({
-      value: c._id || c.centerName || String(i),
-      label: `${c.centerName || c.address} (${c.city})`,
-      sublabel: c.address && c.centerName ? c.address : undefined,
-    })),
-  ], [filteredCenters]);
 
   // Helper to ensure 4 images per center
   const getCenterImages = (center: CenterApiModel): string[] => {
@@ -574,26 +919,27 @@ export default function TrainingCenterDetail() {
           4. Keyword Search Bar
           ========================================================================= */}
       <section className="relative -mt-7 max-w-[1380px] mx-auto px-4 sm:px-6 lg:px-8 z-20">
-        <div className="bg-white rounded-xl shadow-xl border border-slate-200/80 p-5 sm:p-6 transition-all">
-          <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-slate-100 mb-4">
-            <div className="flex items-center gap-2 text-[#001C5C] font-bold text-sm sm:text-base">
-              <Filter size={18} className="text-[#F87902]" />
-              <span>Filter & Search Training Centers</span>
+        <div className="bg-white rounded-2xl shadow-xl border border-slate-200/90 p-5 sm:p-7 transition-all">
+          {/* Card Header: Title & Reset Button */}
+          <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-slate-100 mb-5">
+            <div className="flex items-center gap-2.5 text-[#001C5C] font-bold text-sm sm:text-base">
+              <div className="w-8 h-8 rounded-lg bg-orange-50 text-[#F87902] flex items-center justify-center shrink-0">
+                <Filter size={16} />
+              </div>
+              <div>
+                <span className="block leading-tight font-extrabold text-[#001C5C]">
+                  Filter & Search Training Centers
+                </span>
+                <span className="text-[11px] text-slate-400 font-normal">
+                  Find centers by city, course, or select directly from the center search bar
+                </span>
+              </div>
             </div>
             <div className="flex items-center gap-2.5">
-              {/* <Link
-                to="/centres-details"
-                className="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-[#001C5C] hover:bg-[#F87902] text-white text-xs font-bold rounded-lg shadow-xs hover:shadow transition-all"
-                title="View All Center Details"
-              >
-                <Building2 size={13} className="text-[#F87902]" />
-                <span>All Center Details</span>
-                <ChevronRight size={13} />
-              </Link> */}
               <button
                 type="button"
                 onClick={handleResetFilters}
-                className="text-xs text-slate-500 hover:text-[#F87902] flex items-center gap-1 transition-colors cursor-pointer"
+                className="text-xs text-slate-500 hover:text-[#F87902] flex items-center gap-1.5 px-3 py-1.5 rounded-lg hover:bg-orange-50/50 transition-colors cursor-pointer font-medium"
               >
                 <RotateCcw size={13} />
                 <span>Reset Filters</span>
@@ -601,92 +947,119 @@ export default function TrainingCenterDetail() {
             </div>
           </div>
 
-          {/* Top Row: Search by City, Course, and Keyword */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {/* Top Row: Search by City and Search by Course (Balanced 2-Column Grid) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
             {/* Search 1: Search by City */}
-            <div>
-              <label className="block text-[11.5px] font-bold text-slate-600 uppercase tracking-wider mb-1.5 flex items-center gap-1">
-                <MapPin size={13} className="text-[#F87902]" />
-                Search by City / Zone
-              </label>
-              <CustomDropdown
-                value={selectedCity}
-                placeholder={`All Cities (${apiCities.length})`}
-                options={cityOptions}
-                onChange={(val) => setSelectedCity(val)}
-                searchable
-              />
-            </div>
+            <FilterDropdown
+              label="Search by City / Zone"
+              icon={<MapPin size={14} />}
+              iconBgColor="bg-orange-50"
+              iconColor="text-[#F87902]"
+              value={selectedCity}
+              placeholder={`All Cities (${apiCities.length})`}
+              options={cityOptions}
+              onChange={(val) => setSelectedCity(val)}
+              badge={`${apiCities.length} Cities`}
+              searchable
+            />
 
             {/* Search 2: Search by Course */}
-            <div>
-              <label className="block text-[11.5px] font-bold text-slate-600 uppercase tracking-wider mb-1.5 flex items-center gap-1">
-                <BookOpen size={13} className="text-[#F87902]" />
-                Search by Course / Training
-              </label>
-              <CustomDropdown
-                value={selectedCourse}
-                placeholder={`All Courses (${apiCourses.length})`}
-                options={courseOptions}
-                onChange={(val) => setSelectedCourse(val)}
-                searchable
-              />
-            </div>
-
-            {/* Search 3: Keyword Search */}
-            <div>
-              <label className="block text-[11.5px] font-bold text-slate-600 uppercase tracking-wider mb-1.5 flex items-center gap-1">
-                <Search size={13} className="text-[#F87902]" />
-                Search Name, Address, PIN
-              </label>
-              <div className="relative">
-                <input
-                  type="text"
-                  value={searchKeyword}
-                  onChange={(e) => setSearchKeyword(e.target.value)}
-                  placeholder="e.g. Dilshad Garden, Kalkaji, 110095..."
-                  className="w-full bg-slate-50 border border-slate-300 rounded-lg pl-9 pr-8 py-2.5 text-xs sm:text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#F87902] placeholder-slate-400"
-                />
-                <Search size={15} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
-                {searchKeyword && (
-                  <button
-                    type="button"
-                    onClick={() => setSearchKeyword('')}
-                    className="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 p-0.5"
-                  >
-                    <X size={14} />
-                  </button>
-                )}
-              </div>
-            </div>
-          </div>
-
-          {/* Bottom Row: Select Center Directly Dropdown (Dedicated Line) */}
-          <div className="mt-4 pt-3.5 border-t border-slate-100">
-            <label className="block text-[11.5px] font-bold text-slate-600 uppercase tracking-wider mb-1.5 flex items-center gap-1">
-              <Building2 size={13} className="text-[#F87902]" />
-              Select Center Directly
-            </label>
-            <CustomDropdown
-              value={selectedCenterId}
-              placeholder="-- Choose Center from Dropdown --"
-              options={centerOptions}
-              onChange={handleCenterSelect}
+            <FilterDropdown
+              label="Search by Course / Training"
+              icon={<BookOpen size={14} />}
+              iconBgColor="bg-blue-50"
+              iconColor="text-[#001C5C]"
+              value={selectedCourse}
+              placeholder={`All Courses (${apiCourses.length})`}
+              options={courseOptions}
+              onChange={(val) => setSelectedCourse(val)}
+              badge={`${apiCourses.length} Courses`}
               searchable
             />
           </div>
 
-          {/* Results summary & Active filters */}
-          <div className="mt-4 pt-3 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
-            <div>
-              Showing <strong className="text-[#001C5C] font-bold">{filteredCenters.length}</strong> verified training centers
-              {selectedCity !== 'All' && <span> in <strong className="text-slate-800">{selectedCity}</strong></span>}
-              {selectedCourse !== 'All' && <span> for <strong className="text-slate-800">{selectedCourse}</strong></span>}
-            </div>
-            {filteredCenters.length > 0 && activeCenter && (
-              <div className="text-slate-500">
-                Selected: <span className="font-semibold text-[#001C5C]">{activeCenter.centerName}</span>
+          {/* Bottom Row: Select Center Directly Dropdown (CENTERED) */}
+          <div className="mt-6 pt-5 border-t border-slate-100">
+            <div className="max-w-2xl mx-auto w-full">
+              {/* Centered Label */}
+              <div className="flex items-center justify-between mb-2 px-1">
+                <label className="text-[11.5px] font-bold text-slate-700 uppercase tracking-wider flex items-center gap-1.5">
+                  <Building2 size={14} className="text-[#F87902]" />
+                  <span>Select Center Directly</span>
+                </label>
+                <span className="text-[11px] font-semibold text-slate-500 bg-slate-100 px-2.5 py-0.5 rounded-full">
+                  {filteredCenters.length} Centers Available
+                </span>
               </div>
+
+              {/* Centered Search Bar */}
+              <CenterSearchDropdown
+                centers={filteredCenters}
+                selectedCenterId={selectedCenterId}
+                activeCenter={activeCenter}
+                onSelect={handleCenterSelect}
+              />
+            </div>
+          </div>
+
+          {/* Results summary & Active filters */}
+          <div className="mt-5 pt-3.5 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
+            <div className="flex flex-wrap items-center gap-2">
+              <span>
+                Showing <strong className="text-[#001C5C] font-bold">{filteredCenters.length}</strong> verified training centers
+              </span>
+
+              {selectedCity !== 'All' && (
+                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 bg-orange-50 text-[#F87902] border border-orange-200 rounded-full font-semibold text-[11px]">
+                  <span>City: {selectedCity}</span>
+                  <button
+                    type="button"
+                    onClick={() => setSelectedCity('All')}
+                    className="hover:text-red-600 cursor-pointer ml-0.5"
+                    title="Remove city filter"
+                  >
+                    <X size={12} />
+                  </button>
+                </span>
+              )}
+
+              {selectedCourse !== 'All' && (
+                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 bg-blue-50 text-[#001C5C] border border-blue-200 rounded-full font-semibold text-[11px]">
+                  <span>Course: {selectedCourse}</span>
+                  <button
+                    type="button"
+                    onClick={() => setSelectedCourse('All')}
+                    className="hover:text-red-600 cursor-pointer ml-0.5"
+                    title="Remove course filter"
+                  >
+                    <X size={12} />
+                  </button>
+                </span>
+              )}
+
+              {selectedCenterId && activeCenter && (
+                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 bg-emerald-50 text-emerald-800 border border-emerald-200 rounded-full font-semibold text-[11px]">
+                  <span>Selected: {activeCenter.centerName}</span>
+                  <button
+                    type="button"
+                    onClick={() => handleCenterSelect('')}
+                    className="hover:text-red-600 cursor-pointer ml-0.5"
+                    title="Clear selected center"
+                  >
+                    <X size={12} />
+                  </button>
+                </span>
+              )}
+            </div>
+
+            {(selectedCity !== 'All' || selectedCourse !== 'All' || selectedCenterId) && (
+              <button
+                type="button"
+                onClick={handleResetFilters}
+                className="text-[11px] font-bold text-[#F87902] hover:underline cursor-pointer"
+              >
+                Clear all filters
+              </button>
             )}
           </div>
         </div>
