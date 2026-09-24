@@ -901,6 +901,8 @@ export default function TrainingCenterDetail() {
           <div className="pt-2">
             <Link
               to="/centres-details"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-[#001C5C] hover:bg-orange-50 hover:text-[#F87902] px-4 py-2 rounded-full text-xs sm:text-sm font-bold shadow-md hover:shadow-lg transition-all"
             >
               <Building2 size={15} className="text-[#F87902]" />
@@ -1116,6 +1118,8 @@ export default function TrainingCenterDetail() {
                 {/* All Center Details Button */}
                 {/* <Link
                   to="/centres-details"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/20 hover:bg-white/30 text-white border border-white/30 px-4 py-3 rounded-md text-xs font-bold uppercase tracking-wider shadow-sm transition-transform active:scale-95"
                   title="View All Centers List"
                 >
