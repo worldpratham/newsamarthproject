@@ -524,6 +524,9 @@ export default function TrainingCenterDetail() {
   const [loading, setLoading] = useState(true);
   const [apiCities, setApiCities] = useState<string[]>([]);
   const [apiCourses, setApiCourses] = useState<string[]>([]);
+  const [cityCounts, setCityCounts] = useState<Record<string, number>>({});
+  const [courseCounts, setCourseCounts] = useState<Record<string, number>>({});
+  const [totalCentersCount, setTotalCentersCount] = useState<number>(129);
 
   // Search & Filter state (3-4 search bars)
   const [selectedCenterId, setSelectedCenterId] = useState<string>('');
@@ -586,6 +589,9 @@ export default function TrainingCenterDetail() {
           setCenters(res.centers || []);
           if (res.cities && res.cities.length > 0) setApiCities(res.cities);
           if (res.courses && res.courses.length > 0) setApiCourses(res.courses);
+          if (res.cityCounts && Object.keys(res.cityCounts).length > 0) setCityCounts(res.cityCounts);
+          if (res.courseCounts && Object.keys(res.courseCounts).length > 0) setCourseCounts(res.courseCounts);
+          if (res.total) setTotalCentersCount(res.total);
 
           // If no active center selected or current active center is not in new list, pick the first one
           if (res.centers && res.centers.length > 0) {
@@ -665,16 +671,38 @@ export default function TrainingCenterDetail() {
     setSelectedCenterId('');
   };
 
-  // Options for filter dropdowns
+  // Options for filter dropdowns with precise center counts
   const cityOptions = useMemo<FilterDropdownOption[]>(() => [
-    { value: 'All', label: `Cities (${apiCities.length})` },
-    ...apiCities.map((city) => ({ value: city, label: city })),
-  ], [apiCities]);
+    {
+      value: 'All',
+      label: `All Cities (${totalCentersCount})`,
+      sublabel: `${totalCentersCount} Total Training Centers`,
+    },
+    ...apiCities.map((city) => {
+      const count = cityCounts[city] || 0;
+      return {
+        value: city,
+        label: count > 0 ? `${city} (${count})` : city,
+        sublabel: count > 0 ? `${count} ${count === 1 ? 'Center' : 'Centers'} Available` : undefined,
+      };
+    }),
+  ], [apiCities, cityCounts, totalCentersCount]);
 
   const courseOptions = useMemo<FilterDropdownOption[]>(() => [
-    { value: 'All', label: `Courses (${apiCourses.length})` },
-    ...apiCourses.map((crs) => ({ value: crs, label: crs })),
-  ], [apiCourses]);
+    {
+      value: 'All',
+      label: `All Courses (${totalCentersCount})`,
+      sublabel: `${totalCentersCount} Total Offerings`,
+    },
+    ...apiCourses.map((crs) => {
+      const count = courseCounts[crs] || 0;
+      return {
+        value: crs,
+        label: count > 0 ? `${crs} (${count})` : crs,
+        sublabel: count > 0 ? `${count} ${count === 1 ? 'Center' : 'Centers'} Offering` : undefined,
+      };
+    }),
+  ], [apiCourses, courseCounts, totalCentersCount]);
 
   // Helper to ensure 4 images per center
   const getCenterImages = (center: CenterApiModel): string[] => {
@@ -759,6 +787,9 @@ export default function TrainingCenterDetail() {
     }
     if (c.includes('flutter') || c.includes('app')) {
       return '/courses/flutter-app-development';
+    }
+    if (c.includes('multiple') || c.includes('all') || c.includes('training') || c.includes('community')) {
+      return '/community-training-programs';
     }
 
     return '/courses/cutting-tailoring';
@@ -958,10 +989,14 @@ export default function TrainingCenterDetail() {
               iconBgColor="bg-orange-50"
               iconColor="text-[#F87902]"
               value={selectedCity}
-              placeholder={`All Cities (${apiCities.length})`}
+              placeholder={
+                selectedCity !== 'All'
+                  ? `${selectedCity} (${cityCounts[selectedCity] || filteredCenters.length})`
+                  : `All Cities (${totalCentersCount})`
+              }
               options={cityOptions}
               onChange={(val) => setSelectedCity(val)}
-              badge={`${apiCities.length} Cities`}
+              badge={`${apiCities.length} Cities (${totalCentersCount} Centers)`}
               searchable
             />
 
@@ -972,7 +1007,11 @@ export default function TrainingCenterDetail() {
               iconBgColor="bg-blue-50"
               iconColor="text-[#001C5C]"
               value={selectedCourse}
-              placeholder={`All Courses (${apiCourses.length})`}
+              placeholder={
+                selectedCourse !== 'All'
+                  ? `${selectedCourse} (${courseCounts[selectedCourse] || filteredCenters.length})`
+                  : `All Courses (${totalCentersCount})`
+              }
               options={courseOptions}
               onChange={(val) => setSelectedCourse(val)}
               badge={`${apiCourses.length} Courses`}
@@ -1013,7 +1052,7 @@ export default function TrainingCenterDetail() {
 
               {selectedCity !== 'All' && (
                 <span className="inline-flex items-center gap-1 px-2.5 py-0.5 bg-orange-50 text-[#F87902] border border-orange-200 rounded-full font-semibold text-[11px]">
-                  <span>City: {selectedCity}</span>
+                  <span>City: {selectedCity} ({filteredCenters.length})</span>
                   <button
                     type="button"
                     onClick={() => setSelectedCity('All')}

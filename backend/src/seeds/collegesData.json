@@ -31,7 +31,7 @@
   },
   {
     "sNo": 6,
-    "collegeName": "Bharti College",
+    "collegeName": "Bharati College",
     "university": "University of Delhi (DU)",
     "isActive": true
   },
@@ -55,151 +55,277 @@
   },
   {
     "sNo": 10,
-    "collegeName": "Dyal Singh College (Morning)",
+    "collegeName": "Deen Dayal Upadhyaya College",
     "university": "University of Delhi (DU)",
     "isActive": true
   },
   {
     "sNo": 11,
-    "collegeName": "Dyal Singh College (Evening)",
+    "collegeName": "Delhi College of Arts & Commerce",
     "university": "University of Delhi (DU)",
     "isActive": true
   },
   {
     "sNo": 12,
-    "collegeName": "Deen Dayal Upadhyay College",
-    "university": "University of Delhi (DU)",
-    "isActive": true
-  },
-  {
-    "sNo": 13,
-    "collegeName": "Delhi College of Arts and Commerce",
-    "university": "University of Delhi (DU)",
-    "isActive": true
-  },
-  {
-    "sNo": 14,
     "collegeName": "Deshbandhu College",
     "university": "University of Delhi (DU)",
     "isActive": true
   },
   {
+    "sNo": 13,
+    "collegeName": "Dr. Bhim Rao Ambedkar College",
+    "university": "University of Delhi (DU)",
+    "isActive": true
+  },
+  {
+    "sNo": 14,
+    "collegeName": "Dyal Singh College (Evening)",
+    "university": "University of Delhi (DU)",
+    "isActive": true
+  },
+  {
     "sNo": 15,
-    "collegeName": "Hansraj College",
+    "collegeName": "Dyal Singh College (Morning)",
     "university": "University of Delhi (DU)",
     "isActive": true
   },
   {
     "sNo": 16,
-    "collegeName": "Indraprastha College for Women",
+    "collegeName": "Gargi College",
     "university": "University of Delhi (DU)",
     "isActive": true
   },
   {
     "sNo": 17,
-    "collegeName": "Kamala Nehru College",
+    "collegeName": "Hans Raj College",
     "university": "University of Delhi (DU)",
     "isActive": true
   },
   {
     "sNo": 18,
-    "collegeName": "Kirori Mal College",
+    "collegeName": "Indraprastha College for Women",
     "university": "University of Delhi (DU)",
     "isActive": true
   },
   {
     "sNo": 19,
-    "collegeName": "Lakshmibai College",
+    "collegeName": "Institute of Home Economics",
     "university": "University of Delhi (DU)",
     "isActive": true
   },
   {
     "sNo": 20,
-    "collegeName": "Maharaja Agrasen College",
+    "collegeName": "Janki Devi Memorial College",
     "university": "University of Delhi (DU)",
     "isActive": true
   },
   {
     "sNo": 21,
-    "collegeName": "Maitreyi College",
+    "collegeName": "Jesus & Mary College",
     "university": "University of Delhi (DU)",
     "isActive": true
   },
   {
     "sNo": 22,
-    "collegeName": "Mata Sundari College for Women",
+    "collegeName": "Kalindi College",
     "university": "University of Delhi (DU)",
     "isActive": true
   },
   {
     "sNo": 23,
-    "collegeName": "P.G.D.A.V. College (Morning)",
+    "collegeName": "Kamala Nehru College",
     "university": "University of Delhi (DU)",
     "isActive": true
   },
   {
     "sNo": 24,
-    "collegeName": "P.G.D.A.V. College (Evening)",
+    "collegeName": "Keshav Mahavidyalaya",
     "university": "University of Delhi (DU)",
     "isActive": true
   },
   {
     "sNo": 25,
-    "collegeName": "Ramanujan College",
+    "collegeName": "Kirori Mal College",
     "university": "University of Delhi (DU)",
     "isActive": true
   },
   {
     "sNo": 26,
-    "collegeName": "Ramjas College",
+    "collegeName": "Lady Irwin College",
     "university": "University of Delhi (DU)",
     "isActive": true
   },
   {
     "sNo": 27,
-    "collegeName": "School of Open Learning (DU SOL)",
+    "collegeName": "Lakshmibai College",
     "university": "University of Delhi (DU)",
     "isActive": true
   },
   {
     "sNo": 28,
-    "collegeName": "Shaheed Bhagat Singh College (Evening)",
+    "collegeName": "Maharaja Agrasen College",
     "university": "University of Delhi (DU)",
     "isActive": true
   },
   {
     "sNo": 29,
-    "collegeName": "Shaheed Bhagat Singh College (Morning)",
+    "collegeName": "Maitreyi College",
     "university": "University of Delhi (DU)",
     "isActive": true
   },
   {
     "sNo": 30,
-    "collegeName": "Shivaji College",
+    "collegeName": "Mata Sundri College for Women",
     "university": "University of Delhi (DU)",
     "isActive": true
   },
   {
     "sNo": 31,
-    "collegeName": "Sri Aurobindo College (Morning)",
+    "collegeName": "Motilal Nehru College (Evening)",
     "university": "University of Delhi (DU)",
     "isActive": true
   },
   {
     "sNo": 32,
-    "collegeName": "Sri Aurobindo College (Evening)",
+    "collegeName": "Motilal Nehru College (Morning)",
     "university": "University of Delhi (DU)",
     "isActive": true
   },
   {
     "sNo": 33,
-    "collegeName": "Sri Guru Tegh Bahadur Khalsa College",
+    "collegeName": "P.G.D.A.V. College (Evening)",
     "university": "University of Delhi (DU)",
     "isActive": true
   },
   {
     "sNo": 34,
-    "collegeName": "Zakir Husain Delhi College",
+    "collegeName": "P.G.D.A.V. College (Morning)",
+    "university": "University of Delhi (DU)",
+    "isActive": true
+  },
+  {
+    "sNo": 35,
+    "collegeName": "Rajdhani College",
+    "university": "University of Delhi (DU)",
+    "isActive": true
+  },
+  {
+    "sNo": 36,
+    "collegeName": "Ram Lal Anand College",
+    "university": "University of Delhi (DU)",
+    "isActive": true
+  },
+  {
+    "sNo": 37,
+    "collegeName": "Ramanujan College",
+    "university": "University of Delhi (DU)",
+    "isActive": true
+  },
+  {
+    "sNo": 38,
+    "collegeName": "Ramjas College",
+    "university": "University of Delhi (DU)",
+    "isActive": true
+  },
+  {
+    "sNo": 39,
+    "collegeName": "Satyawati College (Evening)",
+    "university": "University of Delhi (DU)",
+    "isActive": true
+  },
+  {
+    "sNo": 40,
+    "collegeName": "Satyawati College (Morning)",
+    "university": "University of Delhi (DU)",
+    "isActive": true
+  },
+  {
+    "sNo": 41,
+    "collegeName": "School of Open Learning",
+    "university": "University of Delhi (DU)",
+    "isActive": true
+  },
+  {
+    "sNo": 42,
+    "collegeName": "Shaheed Bhagat Singh College (Evening)",
+    "university": "University of Delhi (DU)",
+    "isActive": true
+  },
+  {
+    "sNo": 43,
+    "collegeName": "Shaheed Bhagat Singh College (Morning)",
+    "university": "University of Delhi (DU)",
+    "isActive": true
+  },
+  {
+    "sNo": 44,
+    "collegeName": "Shaheed Rajguru College of Applied Sciences for Women",
+    "university": "University of Delhi (DU)",
+    "isActive": true
+  },
+  {
+    "sNo": 45,
+    "collegeName": "Shivaji College",
+    "university": "University of Delhi (DU)",
+    "isActive": true
+  },
+  {
+    "sNo": 46,
+    "collegeName": "Shyam Lal College (Evening)",
+    "university": "University of Delhi (DU)",
+    "isActive": true
+  },
+  {
+    "sNo": 47,
+    "collegeName": "Shyam Lal College (Morning)",
+    "university": "University of Delhi (DU)",
+    "isActive": true
+  },
+  {
+    "sNo": 48,
+    "collegeName": "Shyama Prasad Mukherji College",
+    "university": "University of Delhi (DU)",
+    "isActive": true
+  },
+  {
+    "sNo": 49,
+    "collegeName": "Sri Aurobindo College (Evening)",
+    "university": "University of Delhi (DU)",
+    "isActive": true
+  },
+  {
+    "sNo": 50,
+    "collegeName": "Sri Aurobindo College (Morning)",
+    "university": "University of Delhi (DU)",
+    "isActive": true
+  },
+  {
+    "sNo": 51,
+    "collegeName": "Sri Guru Tegh Bahadur Khalsa College",
+    "university": "University of Delhi (DU)",
+    "isActive": true
+  },
+  {
+    "sNo": 52,
+    "collegeName": "Sri Venkateswara College",
+    "university": "University of Delhi (DU)",
+    "isActive": true
+  },
+  {
+    "sNo": 53,
+    "collegeName": "Vivekananda College",
+    "university": "University of Delhi (DU)",
+    "isActive": true
+  },
+  {
+    "sNo": 54,
+    "collegeName": "Zakir Husain Delhi College (Evening)",
+    "university": "University of Delhi (DU)",
+    "isActive": true
+  },
+  {
+    "sNo": 55,
+    "collegeName": "Zakir Husain Delhi College (Morning)",
     "university": "University of Delhi (DU)",
     "isActive": true
   }

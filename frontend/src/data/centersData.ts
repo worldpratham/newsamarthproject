@@ -16,10 +16,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/ac-repair-course.jpg",
-      "/gallery/gallery-1.jpg",
-      "/gallery/gallery-2.jpg",
-      "/gallery/gallery-7.jpg"
+      "/centers/center-2/img-1.webp",
+      "/centers/center-2/img-2.webp",
+      "/centers/center-2/img-3.webp",
+      "/centers/center-2/img-4.webp"
     ],
     "videos": [
       {
@@ -50,10 +50,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/beautician-training-course.jpg",
-      "/gallery/gallery-3.jpg",
-      "/gallery/gallery-5.jpeg",
-      "/gallery/gallery-9.jpeg"
+      "/centers/center-1/img-1.webp",
+      "/centers/center-1/img-2.webp",
+      "/centers/center-1/img-1.webp",
+      "/centers/center-1/img-1.webp"
     ],
     "videos": [
       {
@@ -84,10 +84,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/beautician-training-course.jpg",
-      "/gallery/gallery-6.jpg",
-      "/gallery/gallery-7.jpg",
-      "/gallery/gallery-11.jpeg"
+      "/centers/center-3/img-1.webp",
+      "/centers/center-3/img-2.webp",
+      "/centers/center-3/img-3.webp",
+      "/centers/center-3/img-4.webp"
     ],
     "videos": [
       {
@@ -118,10 +118,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/cutting-tailoring-course.jpg",
-      "/gallery/gallery-8.jpg",
-      "/gallery/gallery-9.jpeg",
-      "/gallery/gallery-15.jpg"
+      "/centers/center-4/img-1.webp",
+      "/centers/center-4/img-2.webp",
+      "/centers/center-4/img-3.webp",
+      "/centers/center-4/img-4.webp"
     ],
     "videos": [
       {
@@ -152,10 +152,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/cutting-and-tailoring.jpg",
-      "/gallery/gallery-10.jpg",
-      "/gallery/gallery-11.jpeg",
-      "/gallery/gallery-17.jpg"
+      "/centers/center-5/img-1.webp",
+      "/centers/center-5/img-2.webp",
+      "/centers/center-5/img-3.webp",
+      "/centers/center-5/img-4.webp"
     ],
     "videos": [
       {
@@ -186,10 +186,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/beautician-training-course.jpg",
-      "/gallery/gallery-13.jpg",
-      "/gallery/gallery-15.jpg",
-      "/gallery/gallery-19.jpeg"
+      "/centers/center-6/img-1.webp",
+      "/centers/center-6/img-2.webp",
+      "/centers/center-6/img-3.webp",
+      "/centers/center-6/img-4.webp"
     ],
     "videos": [
       {
@@ -254,10 +254,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/bakery-course.jpg",
-      "/gallery/gallery-18.jpg",
-      "/gallery/gallery-19.jpeg",
-      "/gallery/gallery-23.jpg"
+      "/centers/center-7/img-1.webp",
+      "/centers/center-7/img-2.webp",
+      "/centers/center-7/img-3.webp",
+      "/centers/center-7/img-4.webp"
     ],
     "videos": [
       {
@@ -288,10 +288,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/ac-repair-course.jpg",
-      "/gallery/gallery-20.jpeg",
-      "/gallery/gallery-21.jpg",
-      "/gallery/gallery-25.jpg"
+      "/centers/center-9/img-1.webp",
+      "/centers/center-9/img-2.webp",
+      "/centers/center-9/img-3.webp",
+      "/centers/center-9/img-4.webp"
     ],
     "videos": [
       {
@@ -322,10 +322,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/beautician-training-course.jpg",
-      "/gallery/gallery-22.jpeg",
-      "/gallery/gallery-23.jpg",
-      "/gallery/gallery-2.jpg"
+      "/centers/center-10/img-1.webp",
+      "/centers/center-10/img-2.webp",
+      "/centers/center-10/img-3.webp",
+      "/centers/center-10/img-4.webp"
     ],
     "videos": [
       {
@@ -356,10 +356,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/bakery-course.jpg",
-      "/gallery/gallery-24.jpeg",
-      "/gallery/gallery-25.jpg",
-      "/gallery/gallery-5.jpeg"
+      "/centers/center-11/img-1.webp",
+      "/centers/center-11/img-2.webp",
+      "/centers/center-11/img-3.webp",
+      "/centers/center-11/img-4.webp"
     ],
     "videos": [
       {
@@ -390,10 +390,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/ac-repair-course.jpg",
-      "/gallery/gallery-1.jpg",
-      "/gallery/gallery-2.jpg",
-      "/gallery/gallery-7.jpg"
+      "/centers/center-12/img-1.webp",
+      "/centers/center-12/img-2.webp",
+      "/centers/center-12/img-3.webp",
+      "/centers/center-12/img-4.webp"
     ],
     "videos": [
       {
@@ -424,10 +424,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/beautician-training-course.jpg",
-      "/gallery/gallery-3.jpg",
-      "/gallery/gallery-5.jpeg",
-      "/gallery/gallery-9.jpeg"
+      "/centers/center-13/img-1.webp",
+      "/centers/center-13/img-2.webp",
+      "/centers/center-13/img-3.webp",
+      "/centers/center-13/img-4.webp"
     ],
     "videos": [
       {
@@ -458,10 +458,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/ac-repair-course.jpg",
-      "/gallery/gallery-6.jpg",
-      "/gallery/gallery-7.jpg",
-      "/gallery/gallery-11.jpeg"
+      "/centers/center-14/img-1.webp",
+      "/centers/center-14/img-2.webp",
+      "/centers/center-14/img-3.webp",
+      "/centers/center-14/img-4.webp"
     ],
     "videos": [
       {
@@ -526,10 +526,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/beautician-training-course.jpg",
-      "/gallery/gallery-10.jpg",
-      "/gallery/gallery-11.jpeg",
-      "/gallery/gallery-17.jpg"
+      "/centers/center-16/img-1.webp",
+      "/centers/center-16/img-2.webp",
+      "/centers/center-16/img-3.webp",
+      "/centers/center-16/img-4.webp"
     ],
     "videos": [
       {
@@ -560,10 +560,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/beautician-training-course.jpg",
-      "/gallery/gallery-13.jpg",
-      "/gallery/gallery-15.jpg",
-      "/gallery/gallery-19.jpeg"
+      "/centers/center-17/img-1.webp",
+      "/centers/center-17/img-2.webp",
+      "/centers/center-17/img-3.webp",
+      "/centers/center-17/img-4.webp"
     ],
     "videos": [
       {
@@ -628,10 +628,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/beautician-training-course.jpg",
-      "/gallery/gallery-18.jpg",
-      "/gallery/gallery-19.jpeg",
-      "/gallery/gallery-23.jpg"
+      "/centers/center-19/img-1.webp",
+      "/centers/center-19/img-2.webp",
+      "/centers/center-19/img-3.webp",
+      "/centers/center-19/img-4.webp"
     ],
     "videos": [
       {
@@ -662,10 +662,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/ac-repair-course.jpg",
-      "/gallery/gallery-20.jpeg",
-      "/gallery/gallery-21.jpg",
-      "/gallery/gallery-25.jpg"
+      "/centers/center-20/img-1.webp",
+      "/centers/center-20/img-2.webp",
+      "/centers/center-20/img-1.webp",
+      "/centers/center-20/img-1.webp"
     ],
     "videos": [
       {
@@ -696,10 +696,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/cutting-tailoring-course.jpg",
-      "/gallery/gallery-22.jpeg",
-      "/gallery/gallery-23.jpg",
-      "/gallery/gallery-2.jpg"
+      "/centers/center-21/img-1.webp",
+      "/centers/center-21/img-2.webp",
+      "/centers/center-21/img-3.webp",
+      "/centers/center-21/img-4.webp"
     ],
     "videos": [
       {
@@ -730,10 +730,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/ac-repair-course.jpg",
-      "/gallery/gallery-24.jpeg",
-      "/gallery/gallery-25.jpg",
-      "/gallery/gallery-5.jpeg"
+      "/centers/center-22/img-1.webp",
+      "/centers/center-22/img-2.webp",
+      "/centers/center-22/img-3.webp",
+      "/centers/center-22/img-4.webp"
     ],
     "videos": [
       {
@@ -764,10 +764,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/truck-repairing-course.jpg",
-      "/gallery/gallery-1.jpg",
-      "/gallery/gallery-2.jpg",
-      "/gallery/gallery-7.jpg"
+      "/centers/center-23/img-1.webp",
+      "/centers/center-23/img-2.webp",
+      "/centers/center-23/img-3.webp",
+      "/centers/center-23/img-4.webp"
     ],
     "videos": [
       {
@@ -798,10 +798,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/ac-repair-course.jpg",
-      "/gallery/gallery-3.jpg",
-      "/gallery/gallery-5.jpeg",
-      "/gallery/gallery-9.jpeg"
+      "/centers/center-24/img-1.webp",
+      "/centers/center-24/img-2.webp",
+      "/centers/center-24/img-3.webp",
+      "/centers/center-24/img-1.webp"
     ],
     "videos": [
       {
@@ -832,10 +832,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/carpenter-training.jpg",
-      "/gallery/gallery-6.jpg",
-      "/gallery/gallery-7.jpg",
-      "/gallery/gallery-11.jpeg"
+      "/centers/center-25/img-1.webp",
+      "/centers/center-25/img-2.webp",
+      "/centers/center-25/img-3.webp",
+      "/centers/center-25/img-4.webp"
     ],
     "videos": [
       {
@@ -866,10 +866,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/ac-repair-course.jpg",
-      "/gallery/gallery-8.jpg",
-      "/gallery/gallery-9.jpeg",
-      "/gallery/gallery-15.jpg"
+      "/centers/center-26/img-1.webp",
+      "/centers/center-26/img-2.webp",
+      "/centers/center-26/img-3.webp",
+      "/centers/center-26/img-4.webp"
     ],
     "videos": [
       {
@@ -900,10 +900,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/beautician-training-course.jpg",
-      "/gallery/gallery-10.jpg",
-      "/gallery/gallery-11.jpeg",
-      "/gallery/gallery-17.jpg"
+      "/centers/center-27/img-1.webp",
+      "/centers/center-27/img-2.webp",
+      "/centers/center-27/img-3.webp",
+      "/centers/center-27/img-4.webp"
     ],
     "videos": [
       {
@@ -934,10 +934,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/nail-art.jpg",
-      "/gallery/gallery-13.jpg",
-      "/gallery/gallery-15.jpg",
-      "/gallery/gallery-19.jpeg"
+      "/centers/center-28/img-1.webp",
+      "/centers/center-28/img-2.webp",
+      "/centers/center-28/img-3.webp",
+      "/centers/center-28/img-4.webp"
     ],
     "videos": [
       {
@@ -968,10 +968,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/beautician-training-course.jpg",
-      "/gallery/gallery-16.jpg",
-      "/gallery/gallery-17.jpg",
-      "/gallery/gallery-21.jpg"
+      "/centers/center-29/img-1.webp",
+      "/centers/center-29/img-2.webp",
+      "/centers/center-29/img-3.webp",
+      "/centers/center-29/img-4.webp"
     ],
     "videos": [
       {
@@ -1002,10 +1002,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/nail-art.jpg",
-      "/gallery/gallery-18.jpg",
-      "/gallery/gallery-19.jpeg",
-      "/gallery/gallery-23.jpg"
+      "/centers/center-30/img-1.webp",
+      "/centers/center-30/img-2.webp",
+      "/centers/center-30/img-3.webp",
+      "/centers/center-30/img-4.webp"
     ],
     "videos": [
       {
@@ -1036,10 +1036,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/ac-repair-course.jpg",
-      "/gallery/gallery-20.jpeg",
-      "/gallery/gallery-21.jpg",
-      "/gallery/gallery-25.jpg"
+      "/centers/center-31/img-1.webp",
+      "/centers/center-31/img-2.webp",
+      "/centers/center-31/img-3.webp",
+      "/centers/center-31/img-4.webp"
     ],
     "videos": [
       {
@@ -1070,10 +1070,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/ac-repair-course.jpg",
-      "/gallery/gallery-22.jpeg",
-      "/gallery/gallery-23.jpg",
-      "/gallery/gallery-2.jpg"
+      "/centers/center-32/img-1.webp",
+      "/centers/center-32/img-2.webp",
+      "/centers/center-32/img-3.webp",
+      "/centers/center-32/img-4.webp"
     ],
     "videos": [
       {
@@ -1104,10 +1104,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/beautician-training-course.jpg",
-      "/gallery/gallery-24.jpeg",
-      "/gallery/gallery-25.jpg",
-      "/gallery/gallery-5.jpeg"
+      "/centers/center-33/img-1.webp",
+      "/centers/center-33/img-2.webp",
+      "/centers/center-33/img-3.webp",
+      "/centers/center-33/img-4.webp"
     ],
     "videos": [
       {
@@ -1138,10 +1138,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/truck-repairing-course.jpg",
-      "/gallery/gallery-1.jpg",
-      "/gallery/gallery-2.jpg",
-      "/gallery/gallery-7.jpg"
+      "/centers/center-34/img-1.webp",
+      "/centers/center-34/img-2.webp",
+      "/centers/center-34/img-3.webp",
+      "/centers/center-34/img-4.webp"
     ],
     "videos": [
       {
@@ -1172,10 +1172,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/ac-repair-course.jpg",
-      "/gallery/gallery-3.jpg",
-      "/gallery/gallery-5.jpeg",
-      "/gallery/gallery-9.jpeg"
+      "/centers/center-35/img-1.webp",
+      "/centers/center-35/img-2.webp",
+      "/centers/center-35/img-3.webp",
+      "/centers/center-35/img-4.webp"
     ],
     "videos": [
       {
@@ -1240,10 +1240,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/cutting-tailoring-course.jpg",
-      "/gallery/gallery-8.jpg",
-      "/gallery/gallery-9.jpeg",
-      "/gallery/gallery-15.jpg"
+      "/centers/center-37/img-1.webp",
+      "/centers/center-37/img-2.webp",
+      "/centers/center-37/img-3.webp",
+      "/centers/center-37/img-4.webp"
     ],
     "videos": [
       {
@@ -1274,10 +1274,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/beautician-training-course.jpg",
-      "/gallery/gallery-10.jpg",
-      "/gallery/gallery-11.jpeg",
-      "/gallery/gallery-17.jpg"
+      "/centers/center-38/img-1.webp",
+      "/centers/center-38/img-2.webp",
+      "/centers/center-38/img-3.webp",
+      "/centers/center-38/img-4.webp"
     ],
     "videos": [
       {
@@ -1308,10 +1308,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/nail-art.jpg",
-      "/gallery/gallery-13.jpg",
-      "/gallery/gallery-15.jpg",
-      "/gallery/gallery-19.jpeg"
+      "/centers/center-39/img-1.webp",
+      "/centers/center-39/img-2.webp",
+      "/centers/center-39/img-3.webp",
+      "/centers/center-39/img-4.webp"
     ],
     "videos": [
       {
@@ -1376,10 +1376,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/beautician-training-course.jpg",
-      "/gallery/gallery-18.jpg",
-      "/gallery/gallery-19.jpeg",
-      "/gallery/gallery-23.jpg"
+      "/centers/center-41/img-1.webp",
+      "/centers/center-41/img-2.webp",
+      "/centers/center-41/img-3.webp",
+      "/centers/center-41/img-4.webp"
     ],
     "videos": [
       {
@@ -1410,10 +1410,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/cutting-tailoring-course.jpg",
-      "/gallery/gallery-20.jpeg",
-      "/gallery/gallery-21.jpg",
-      "/gallery/gallery-25.jpg"
+      "/centers/center-42/img-1.webp",
+      "/centers/center-42/img-2.webp",
+      "/centers/center-42/img-3.webp",
+      "/centers/center-42/img-4.webp"
     ],
     "videos": [
       {
@@ -1444,10 +1444,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/gda-course.jpg",
-      "/gallery/gallery-22.jpeg",
-      "/gallery/gallery-23.jpg",
-      "/gallery/gallery-2.jpg"
+      "/centers/center-43/img-1.webp",
+      "/centers/center-43/img-2.webp",
+      "/centers/center-43/img-3.webp",
+      "/centers/center-43/img-4.webp"
     ],
     "videos": [
       {
@@ -1512,10 +1512,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/beautician-training-course.jpg",
-      "/gallery/gallery-1.jpg",
-      "/gallery/gallery-2.jpg",
-      "/gallery/gallery-7.jpg"
+      "/centers/center-45/img-1.webp",
+      "/centers/center-45/img-2.webp",
+      "/centers/center-45/img-3.webp",
+      "/centers/center-45/img-4.webp"
     ],
     "videos": [
       {
@@ -1580,10 +1580,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/beautician-training-course.jpg",
-      "/gallery/gallery-6.jpg",
-      "/gallery/gallery-7.jpg",
-      "/gallery/gallery-11.jpeg"
+      "/centers/center-47/img-1.webp",
+      "/centers/center-47/img-2.webp",
+      "/centers/center-47/img-3.webp",
+      "/centers/center-47/img-4.webp"
     ],
     "videos": [
       {
@@ -1852,10 +1852,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/ac-repair-course.jpg",
-      "/gallery/gallery-24.jpeg",
-      "/gallery/gallery-25.jpg",
-      "/gallery/gallery-5.jpeg"
+      "/centers/center-55/img-1.webp",
+      "/centers/center-55/img-2.webp",
+      "/centers/center-55/img-3.webp",
+      "/centers/center-55/img-4.webp"
     ],
     "videos": [
       {
@@ -1920,10 +1920,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/ac-repair-course.jpg",
-      "/gallery/gallery-3.jpg",
-      "/gallery/gallery-5.jpeg",
-      "/gallery/gallery-9.jpeg"
+      "/centers/center-57/img-1.webp",
+      "/centers/center-57/img-2.webp",
+      "/centers/center-57/img-3.webp",
+      "/centers/center-57/img-4.webp"
     ],
     "videos": [
       {
@@ -1954,10 +1954,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/beautician-training-course.jpg",
-      "/gallery/gallery-6.jpg",
-      "/gallery/gallery-7.jpg",
-      "/gallery/gallery-11.jpeg"
+      "/centers/center-58/img-1.webp",
+      "/centers/center-58/img-2.webp",
+      "/centers/center-58/img-3.webp",
+      "/centers/center-58/img-4.webp"
     ],
     "videos": [
       {
@@ -1988,10 +1988,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/cutting-tailoring-course.jpg",
-      "/gallery/gallery-8.jpg",
-      "/gallery/gallery-9.jpeg",
-      "/gallery/gallery-15.jpg"
+      "/centers/center-59/img-1.webp",
+      "/centers/center-59/img-2.webp",
+      "/centers/center-59/img-3.webp",
+      "/centers/center-59/img-4.webp"
     ],
     "videos": [
       {
@@ -2022,10 +2022,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/beautician-training-course.jpg",
-      "/gallery/gallery-10.jpg",
-      "/gallery/gallery-11.jpeg",
-      "/gallery/gallery-17.jpg"
+      "/centers/center-60/img-1.webp",
+      "/centers/center-60/img-2.webp",
+      "/centers/center-60/img-3.webp",
+      "/centers/center-60/img-4.webp"
     ],
     "videos": [
       {
@@ -2056,10 +2056,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/truck-repairing-course.jpg",
-      "/gallery/gallery-13.jpg",
-      "/gallery/gallery-15.jpg",
-      "/gallery/gallery-19.jpeg"
+      "/centers/center-61/img-1.webp",
+      "/centers/center-61/img-2.webp",
+      "/centers/center-61/img-3.webp",
+      "/centers/center-61/img-1.webp"
     ],
     "videos": [
       {
@@ -2090,10 +2090,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/beautician-training-course.jpg",
-      "/gallery/gallery-16.jpg",
-      "/gallery/gallery-17.jpg",
-      "/gallery/gallery-21.jpg"
+      "/centers/center-62/img-1.webp",
+      "/centers/center-62/img-2.webp",
+      "/centers/center-62/img-3.webp",
+      "/centers/center-62/img-4.webp"
     ],
     "videos": [
       {
@@ -2124,10 +2124,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/gda-course.jpg",
-      "/gallery/gallery-18.jpg",
-      "/gallery/gallery-19.jpeg",
-      "/gallery/gallery-23.jpg"
+      "/centers/center-63/img-1.webp",
+      "/centers/center-63/img-2.webp",
+      "/centers/center-63/img-3.webp",
+      "/centers/center-63/img-4.webp"
     ],
     "videos": [
       {
@@ -2158,10 +2158,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/beautician-training-course.jpg",
-      "/gallery/gallery-20.jpeg",
-      "/gallery/gallery-21.jpg",
-      "/gallery/gallery-25.jpg"
+      "/centers/center-64/img-1.webp",
+      "/centers/center-64/img-2.webp",
+      "/centers/center-64/img-3.webp",
+      "/centers/center-64/img-4.webp"
     ],
     "videos": [
       {
@@ -2192,10 +2192,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/beautician-training-course.jpg",
-      "/gallery/gallery-22.jpeg",
-      "/gallery/gallery-23.jpg",
-      "/gallery/gallery-2.jpg"
+      "/centers/center-65/img-1.webp",
+      "/centers/center-65/img-1.webp",
+      "/centers/center-65/img-1.webp",
+      "/centers/center-65/img-1.webp"
     ],
     "videos": [
       {
@@ -2226,10 +2226,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/ac-repair-course.jpg",
-      "/gallery/gallery-24.jpeg",
-      "/gallery/gallery-25.jpg",
-      "/gallery/gallery-5.jpeg"
+      "/centers/center-66/img-1.webp",
+      "/centers/center-66/img-2.webp",
+      "/centers/center-66/img-3.webp",
+      "/centers/center-66/img-1.webp"
     ],
     "videos": [
       {
@@ -2260,10 +2260,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/gda-course.jpg",
-      "/gallery/gallery-1.jpg",
-      "/gallery/gallery-2.jpg",
-      "/gallery/gallery-7.jpg"
+      "/centers/center-67/img-1.webp",
+      "/centers/center-67/img-2.webp",
+      "/centers/center-67/img-3.webp",
+      "/centers/center-67/img-4.webp"
     ],
     "videos": [
       {
@@ -2328,10 +2328,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/ac-repair-course.jpg",
-      "/gallery/gallery-6.jpg",
-      "/gallery/gallery-7.jpg",
-      "/gallery/gallery-11.jpeg"
+      "/centers/center-69/img-1.webp",
+      "/centers/center-69/img-2.webp",
+      "/centers/center-69/img-3.webp",
+      "/centers/center-69/img-4.webp"
     ],
     "videos": [
       {
@@ -2396,10 +2396,10 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
     "contactPerson": "Center Coordinator",
     "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
     "images": [
-      "/courses/ac-repair-course.jpg",
-      "/gallery/gallery-10.jpg",
-      "/gallery/gallery-11.jpeg",
-      "/gallery/gallery-17.jpg"
+      "/centers/center-71/img-1.webp",
+      "/centers/center-71/img-2.webp",
+      "/centers/center-71/img-3.webp",
+      "/centers/center-71/img-4.webp"
     ],
     "videos": [
       {
@@ -2513,6 +2513,1876 @@ export const FALLBACK_CENTERS: CenterApiModel[] = [
         "title": "AC/Refrigerator/RO Practical Training Session",
         "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
         "thumbnail": "/gallery/gallery-19.jpeg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Acharya Narendra Dev College",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110019",
+    "address": "Govindpuri, Kalkaji, New Delhi – 110019",
+    "googleLocationUrl": "https://maps.google.com/?q=Acharya%20Narendra%20Dev%20College%2C%20Govindpuri%2C%20Kalkaji%2C%20New%20Delhi%20%E2%80%93%20110019",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Acharya Narendra Dev College - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Acharya Narendra Dev College - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Aditi Mahavidyalaya",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110039",
+    "address": "Vijay Colony, Vijay Nagar, Bawana, New Delhi, Delhi, 110039",
+    "googleLocationUrl": "https://maps.google.com/?q=Aditi%20Mahavidyalaya%2C%20Vijay%20Colony%2C%20Vijay%20Nagar%2C%20Bawana%2C%20New%20Delhi%2C%20Delhi%2C%20110039",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Aditi Mahavidyalaya - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Aditi Mahavidyalaya - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Aryabhatta College",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110021",
+    "address": "Plot No 5, Benito Juarez Marg, South Campus, Anand Niketan, New Delhi, Delhi 110021",
+    "googleLocationUrl": "https://maps.google.com/?q=Aryabhatta%20College%2C%20Plot%20No%205%2C%20Benito%20Juarez%20Marg%2C%20South%20Campus%2C%20Anand%20Niketan%2C%20New%20Delhi%2C%20Delhi%20110021",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Aryabhatta College - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Aryabhatta College - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Atma Ram Sanatan Dharma College",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110021",
+    "address": "Mahatma Gandhi Road, Dhaula Kuan, New Delhi – 110021",
+    "googleLocationUrl": "https://maps.google.com/?q=Atma%20Ram%20Sanatan%20Dharma%20College%2C%20Mahatma%20Gandhi%20Road%2C%20Dhaula%20Kuan%2C%20New%20Delhi%20%E2%80%93%20110021",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Atma Ram Sanatan Dharma College - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Atma Ram Sanatan Dharma College - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Bhagini Nivedita College",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110043",
+    "address": "Kair, near Najafgarh, New Delhi – 110043",
+    "googleLocationUrl": "https://maps.google.com/?q=Bhagini%20Nivedita%20College%2C%20Kair%2C%20near%20Najafgarh%2C%20New%20Delhi%20%E2%80%93%20110043",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Bhagini Nivedita College - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Bhagini Nivedita College - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Bharati College",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110058",
+    "address": "C-4, Dada Satram Mamtani Marg, Janakpuri, New Delhi – 110058",
+    "googleLocationUrl": "https://maps.google.com/?q=Bharati%20College%2C%20C-4%2C%20Dada%20Satram%20Mamtani%20Marg%2C%20Janakpuri%2C%20New%20Delhi%20%E2%80%93%20110058",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Bharati College - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Bharati College - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Bhaskaracharya College of Applied Sciences",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110075",
+    "address": "Phase 1, Pocket 2, Sector 2, Dwarka, New Delhi – 110075",
+    "googleLocationUrl": "https://maps.google.com/?q=Bhaskaracharya%20College%20of%20Applied%20Sciences%2C%20Phase%201%2C%20Pocket%202%2C%20Sector%202%2C%20Dwarka%2C%20New%20Delhi%20%E2%80%93%20110075",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Bhaskaracharya College of Applied Sciences - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Bhaskaracharya College of Applied Sciences - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "College of Vocational Studies",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110017",
+    "address": "Sheikh Sarai, Phase II, New Delhi – 110017",
+    "googleLocationUrl": "https://maps.google.com/?q=College%20of%20Vocational%20Studies%2C%20Sheikh%20Sarai%2C%20Phase%20II%2C%20New%20Delhi%20%E2%80%93%20110017",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "College of Vocational Studies - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "College of Vocational Studies - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Daulat Ram College",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110007",
+    "address": "4, Patel Marg, Maurice Nagar, Delhi – 110007",
+    "googleLocationUrl": "https://maps.google.com/?q=Daulat%20Ram%20College%2C%204%2C%20Patel%20Marg%2C%20Maurice%20Nagar%2C%20Delhi%20%E2%80%93%20110007",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Daulat Ram College - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Daulat Ram College - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Deen Dayal Upadhyaya College",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110078",
+    "address": "Sector 3, Dwarka, New Delhi – 110078",
+    "googleLocationUrl": "https://maps.google.com/?q=Deen%20Dayal%20Upadhyaya%20College%2C%20Sector%203%2C%20Dwarka%2C%20New%20Delhi%20%E2%80%93%20110078",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Deen Dayal Upadhyaya College - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Deen Dayal Upadhyaya College - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Delhi College of Arts & Commerce",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110023",
+    "address": "Netaji Nagar, New Delhi – 110023",
+    "googleLocationUrl": "https://maps.google.com/?q=Delhi%20College%20of%20Arts%20%26%20Commerce%2C%20Netaji%20Nagar%2C%20New%20Delhi%20%E2%80%93%20110023",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Delhi College of Arts & Commerce - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Delhi College of Arts & Commerce - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Deshbandhu College",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110019",
+    "address": "Kalkaji, New Delhi – 110019",
+    "googleLocationUrl": "https://maps.google.com/?q=Deshbandhu%20College%2C%20Kalkaji%2C%20New%20Delhi%20%E2%80%93%20110019",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Deshbandhu College - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Deshbandhu College - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Dr. Bhim Rao Ambedkar College",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110093",
+    "address": "Wazirabad Road, near Gokulpuri Metro Station, Delhi – 110093",
+    "googleLocationUrl": "https://maps.google.com/?q=Dr.%20Bhim%20Rao%20Ambedkar%20College%2C%20Wazirabad%20Road%2C%20near%20Gokulpuri%20Metro%20Station%2C%20Delhi%20%E2%80%93%20110093",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Dr. Bhim Rao Ambedkar College - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Dr. Bhim Rao Ambedkar College - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Dyal Singh College (Evening)",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110003",
+    "address": "Lodhi Road, Pragati Vihar, New Delhi – 110003",
+    "googleLocationUrl": "https://maps.google.com/?q=Dyal%20Singh%20College%20(Evening)%2C%20Lodhi%20Road%2C%20Pragati%20Vihar%2C%20New%20Delhi%20%E2%80%93%20110003",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Dyal Singh College (Evening) - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Dyal Singh College (Evening) - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Dyal Singh College (Morning)",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110003",
+    "address": "Lodhi Road, Pragati Vihar, New Delhi – 110003",
+    "googleLocationUrl": "https://maps.google.com/?q=Dyal%20Singh%20College%20(Morning)%2C%20Lodhi%20Road%2C%20Pragati%20Vihar%2C%20New%20Delhi%20%E2%80%93%20110003",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Dyal Singh College (Morning) - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Dyal Singh College (Morning) - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Gargi College",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110049",
+    "address": "Siri Fort Road, Siri Fort Institutional Area, New Delhi – 110049",
+    "googleLocationUrl": "https://maps.google.com/?q=Gargi%20College%2C%20Siri%20Fort%20Road%2C%20Siri%20Fort%20Institutional%20Area%2C%20New%20Delhi%20%E2%80%93%20110049",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Gargi College - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Gargi College - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Hans Raj College",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110007",
+    "address": "Mahatma Hans Raj Marg, Malka Ganj, Delhi – 110007",
+    "googleLocationUrl": "https://maps.google.com/?q=Hans%20Raj%20College%2C%20Mahatma%20Hans%20Raj%20Marg%2C%20Malka%20Ganj%2C%20Delhi%20%E2%80%93%20110007",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Hans Raj College - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Hans Raj College - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Indraprastha College for Women",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110054",
+    "address": "31, Sham Nath Marg, Civil Lines, New Delhi – 110054",
+    "googleLocationUrl": "https://maps.google.com/?q=Indraprastha%20College%20for%20Women%2C%2031%2C%20Sham%20Nath%20Marg%2C%20Civil%20Lines%2C%20New%20Delhi%20%E2%80%93%20110054",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Indraprastha College for Women - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Indraprastha College for Women - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Institute of Home Economics",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110016",
+    "address": "F-4, Hauz Khas Enclave, Hauz Khas, New Delhi – 110016",
+    "googleLocationUrl": "https://maps.google.com/?q=Institute%20of%20Home%20Economics%2C%20F-4%2C%20Hauz%20Khas%20Enclave%2C%20Hauz%20Khas%2C%20New%20Delhi%20%E2%80%93%20110016",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Institute of Home Economics - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Institute of Home Economics - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Janki Devi Memorial College",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110060",
+    "address": "Sir Ganga Ram Hospital Marg, Old Rajinder Nagar, New Delhi – 110060",
+    "googleLocationUrl": "https://maps.google.com/?q=Janki%20Devi%20Memorial%20College%2C%20Sir%20Ganga%20Ram%20Hospital%20Marg%2C%20Old%20Rajinder%20Nagar%2C%20New%20Delhi%20%E2%80%93%20110060",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Janki Devi Memorial College - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Janki Devi Memorial College - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Jesus & Mary College",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110021",
+    "address": "Chanakyapuri, New Delhi – 110021",
+    "googleLocationUrl": "https://maps.google.com/?q=Jesus%20%26%20Mary%20College%2C%20Chanakyapuri%2C%20New%20Delhi%20%E2%80%93%20110021",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Jesus & Mary College - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Jesus & Mary College - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Kalindi College",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110008",
+    "address": "East Patel Nagar, New Delhi – 110008",
+    "googleLocationUrl": "https://maps.google.com/?q=Kalindi%20College%2C%20East%20Patel%20Nagar%2C%20New%20Delhi%20%E2%80%93%20110008",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Kalindi College - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Kalindi College - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Kamala Nehru College",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110049",
+    "address": "August Kranti Marg, Siri Fort, New Delhi – 110049",
+    "googleLocationUrl": "https://maps.google.com/?q=Kamala%20Nehru%20College%2C%20August%20Kranti%20Marg%2C%20Siri%20Fort%2C%20New%20Delhi%20%E2%80%93%20110049",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Kamala Nehru College - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Kamala Nehru College - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Keshav Mahavidyalaya",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110034",
+    "address": "H-4/5, Zone, near Sainik Vihar, Pitampura, Delhi – 110034",
+    "googleLocationUrl": "https://maps.google.com/?q=Keshav%20Mahavidyalaya%2C%20H-4%2F5%2C%20Zone%2C%20near%20Sainik%20Vihar%2C%20Pitampura%2C%20Delhi%20%E2%80%93%20110034",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Keshav Mahavidyalaya - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Keshav Mahavidyalaya - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Kirori Mal College",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110007",
+    "address": "University Enclave, Delhi – 110007",
+    "googleLocationUrl": "https://maps.google.com/?q=Kirori%20Mal%20College%2C%20University%20Enclave%2C%20Delhi%20%E2%80%93%20110007",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Kirori Mal College - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Kirori Mal College - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Lady Irwin College",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110001",
+    "address": "Sikandra Road, Mandi House, New Delhi – 110001",
+    "googleLocationUrl": "https://maps.google.com/?q=Lady%20Irwin%20College%2C%20Sikandra%20Road%2C%20Mandi%20House%2C%20New%20Delhi%20%E2%80%93%20110001",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Lady Irwin College - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Lady Irwin College - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Lakshmibai College",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110052",
+    "address": "Ashok Vihar Phase III, Delhi – 110052",
+    "googleLocationUrl": "https://maps.google.com/?q=Lakshmibai%20College%2C%20Ashok%20Vihar%20Phase%20III%2C%20Delhi%20%E2%80%93%20110052",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Lakshmibai College - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Lakshmibai College - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Maharaja Agrasen College",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110096",
+    "address": "Vasundhara Enclave, New Delhi – 110096",
+    "googleLocationUrl": "https://maps.google.com/?q=Maharaja%20Agrasen%20College%2C%20Vasundhara%20Enclave%2C%20New%20Delhi%20%E2%80%93%20110096",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Maharaja Agrasen College - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Maharaja Agrasen College - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Maitreyi College",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110021",
+    "address": "Bapudham Complex, Chanakyapuri, New Delhi – 110021",
+    "googleLocationUrl": "https://maps.google.com/?q=Maitreyi%20College%2C%20Bapudham%20Complex%2C%20Chanakyapuri%2C%20New%20Delhi%20%E2%80%93%20110021",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Maitreyi College - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Maitreyi College - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Mata Sundri College for Women",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110002",
+    "address": "Mata Sundri Lane, Mandi House, New Delhi – 110002",
+    "googleLocationUrl": "https://maps.google.com/?q=Mata%20Sundri%20College%20for%20Women%2C%20Mata%20Sundri%20Lane%2C%20Mandi%20House%2C%20New%20Delhi%20%E2%80%93%20110002",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Mata Sundri College for Women - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Mata Sundri College for Women - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Motilal Nehru College (Evening)",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110021",
+    "address": "Benito Juarez Marg, South Campus, New Delhi – 110021",
+    "googleLocationUrl": "https://maps.google.com/?q=Motilal%20Nehru%20College%20(Evening)%2C%20Benito%20Juarez%20Marg%2C%20South%20Campus%2C%20New%20Delhi%20%E2%80%93%20110021",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Motilal Nehru College (Evening) - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Motilal Nehru College (Evening) - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Motilal Nehru College (Morning)",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110021",
+    "address": "Benito Juarez Marg, South Campus, New Delhi – 110021",
+    "googleLocationUrl": "https://maps.google.com/?q=Motilal%20Nehru%20College%20(Morning)%2C%20Benito%20Juarez%20Marg%2C%20South%20Campus%2C%20New%20Delhi%20%E2%80%93%20110021",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Motilal Nehru College (Morning) - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Motilal Nehru College (Morning) - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "P.G.D.A.V. College (Evening)",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110065",
+    "address": "Ring Road, Nehru Nagar, New Delhi – 110065",
+    "googleLocationUrl": "https://maps.google.com/?q=P.G.D.A.V.%20College%20(Evening)%2C%20Ring%20Road%2C%20Nehru%20Nagar%2C%20New%20Delhi%20%E2%80%93%20110065",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "P.G.D.A.V. College (Evening) - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "P.G.D.A.V. College (Evening) - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "P.G.D.A.V. College (Morning)",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110065",
+    "address": "Ring Road, Nehru Nagar, New Delhi – 110065",
+    "googleLocationUrl": "https://maps.google.com/?q=P.G.D.A.V.%20College%20(Morning)%2C%20Ring%20Road%2C%20Nehru%20Nagar%2C%20New%20Delhi%20%E2%80%93%20110065",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "P.G.D.A.V. College (Morning) - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "P.G.D.A.V. College (Morning) - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Rajdhani College",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110015",
+    "address": "Raja Garden, Mahatma Gandhi Road, New Delhi – 110015",
+    "googleLocationUrl": "https://maps.google.com/?q=Rajdhani%20College%2C%20Raja%20Garden%2C%20Mahatma%20Gandhi%20Road%2C%20New%20Delhi%20%E2%80%93%20110015",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Rajdhani College - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Rajdhani College - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Ram Lal Anand College",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110021",
+    "address": "5, Benito Juarez Marg, South Campus, New Delhi – 110021",
+    "googleLocationUrl": "https://maps.google.com/?q=Ram%20Lal%20Anand%20College%2C%205%2C%20Benito%20Juarez%20Marg%2C%20South%20Campus%2C%20New%20Delhi%20%E2%80%93%20110021",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Ram Lal Anand College - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Ram Lal Anand College - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Ramanujan College",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110019",
+    "address": "G-18B, CR Park Main Road, near Deshbandhu College, Kalkaji, New Delhi – 110019",
+    "googleLocationUrl": "https://maps.google.com/?q=Ramanujan%20College%2C%20G-18B%2C%20CR%20Park%20Main%20Road%2C%20near%20Deshbandhu%20College%2C%20Kalkaji%2C%20New%20Delhi%20%E2%80%93%20110019",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Ramanujan College - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Ramanujan College - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Ramjas College",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110007",
+    "address": "University Enclave, Delhi – 110007",
+    "googleLocationUrl": "https://maps.google.com/?q=Ramjas%20College%2C%20University%20Enclave%2C%20Delhi%20%E2%80%93%20110007",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Ramjas College - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Ramjas College - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Satyawati College (Evening)",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110052",
+    "address": "Ashok Vihar Phase III, Delhi – 110052",
+    "googleLocationUrl": "https://maps.google.com/?q=Satyawati%20College%20(Evening)%2C%20Ashok%20Vihar%20Phase%20III%2C%20Delhi%20%E2%80%93%20110052",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Satyawati College (Evening) - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Satyawati College (Evening) - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Satyawati College (Morning)",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110052",
+    "address": "Ashok Vihar Phase III, Delhi – 110052",
+    "googleLocationUrl": "https://maps.google.com/?q=Satyawati%20College%20(Morning)%2C%20Ashok%20Vihar%20Phase%20III%2C%20Delhi%20%E2%80%93%20110052",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Satyawati College (Morning) - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Satyawati College (Morning) - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "School of Open Learning",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110007",
+    "address": "5 Cavalry Lane, University of Delhi, Delhi – 110007",
+    "googleLocationUrl": "https://maps.google.com/?q=School%20of%20Open%20Learning%2C%205%20Cavalry%20Lane%2C%20University%20of%20Delhi%2C%20Delhi%20%E2%80%93%20110007",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "School of Open Learning - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "School of Open Learning - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Shaheed Bhagat Singh College (Evening)",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110017",
+    "address": "Sheikh Sarai, Phase II, New Delhi – 110017",
+    "googleLocationUrl": "https://maps.google.com/?q=Shaheed%20Bhagat%20Singh%20College%20(Evening)%2C%20Sheikh%20Sarai%2C%20Phase%20II%2C%20New%20Delhi%20%E2%80%93%20110017",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Shaheed Bhagat Singh College (Evening) - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Shaheed Bhagat Singh College (Evening) - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Shaheed Bhagat Singh College (Morning)",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110017",
+    "address": "Sheikh Sarai, Phase II, New Delhi – 110017",
+    "googleLocationUrl": "https://maps.google.com/?q=Shaheed%20Bhagat%20Singh%20College%20(Morning)%2C%20Sheikh%20Sarai%2C%20Phase%20II%2C%20New%20Delhi%20%E2%80%93%20110017",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Shaheed Bhagat Singh College (Morning) - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Shaheed Bhagat Singh College (Morning) - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Shaheed Rajguru College of Applied Sciences for Women",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110096",
+    "address": "Vasundhara Enclave, New Delhi – 110096",
+    "googleLocationUrl": "https://maps.google.com/?q=Shaheed%20Rajguru%20College%20of%20Applied%20Sciences%20for%20Women%2C%20Vasundhara%20Enclave%2C%20New%20Delhi%20%E2%80%93%20110096",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Shaheed Rajguru College of Applied Sciences for Women - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Shaheed Rajguru College of Applied Sciences for Women - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Shivaji College",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110027",
+    "address": "Mahatma Gandhi Road, Shivaji Enclave, Raja Garden, New Delhi – 110027",
+    "googleLocationUrl": "https://maps.google.com/?q=Shivaji%20College%2C%20Mahatma%20Gandhi%20Road%2C%20Shivaji%20Enclave%2C%20Raja%20Garden%2C%20New%20Delhi%20%E2%80%93%20110027",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Shivaji College - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Shivaji College - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Shyam Lal College (Evening)",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110032",
+    "address": "G.T. Road, Shahdara, Delhi – 110032",
+    "googleLocationUrl": "https://maps.google.com/?q=Shyam%20Lal%20College%20(Evening)%2C%20G.T.%20Road%2C%20Shahdara%2C%20Delhi%20%E2%80%93%20110032",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Shyam Lal College (Evening) - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Shyam Lal College (Evening) - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Shyam Lal College (Morning)",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110032",
+    "address": "G.T. Road, Shahdara, Delhi – 110032",
+    "googleLocationUrl": "https://maps.google.com/?q=Shyam%20Lal%20College%20(Morning)%2C%20G.T.%20Road%2C%20Shahdara%2C%20Delhi%20%E2%80%93%20110032",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Shyam Lal College (Morning) - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Shyam Lal College (Morning) - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Shyama Prasad Mukherji College",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110026",
+    "address": "Road No. 57, Punjabi Bagh (West), New Delhi – 110026",
+    "googleLocationUrl": "https://maps.google.com/?q=Shyama%20Prasad%20Mukherji%20College%2C%20Road%20No.%2057%2C%20Punjabi%20Bagh%20(West)%2C%20New%20Delhi%20%E2%80%93%20110026",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Shyama Prasad Mukherji College - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Shyama Prasad Mukherji College - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Sri Aurobindo College (Evening)",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110017",
+    "address": "Malviya Nagar, New Delhi – 110017",
+    "googleLocationUrl": "https://maps.google.com/?q=Sri%20Aurobindo%20College%20(Evening)%2C%20Malviya%20Nagar%2C%20New%20Delhi%20%E2%80%93%20110017",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Sri Aurobindo College (Evening) - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Sri Aurobindo College (Evening) - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Sri Aurobindo College (Morning)",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110017",
+    "address": "Malviya Nagar, New Delhi – 110017",
+    "googleLocationUrl": "https://maps.google.com/?q=Sri%20Aurobindo%20College%20(Morning)%2C%20Malviya%20Nagar%2C%20New%20Delhi%20%E2%80%93%20110017",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Sri Aurobindo College (Morning) - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Sri Aurobindo College (Morning) - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Sri Guru Tegh Bahadur Khalsa College",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110007",
+    "address": "Arts Faculty Road, University Enclave, Delhi – 110007",
+    "googleLocationUrl": "https://maps.google.com/?q=Sri%20Guru%20Tegh%20Bahadur%20Khalsa%20College%2C%20Arts%20Faculty%20Road%2C%20University%20Enclave%2C%20Delhi%20%E2%80%93%20110007",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Sri Guru Tegh Bahadur Khalsa College - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Sri Guru Tegh Bahadur Khalsa College - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Sri Venkateswara College",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110021",
+    "address": "1–6, Benito Juarez Marg, Dhaula Kuan, New Delhi – 110021",
+    "googleLocationUrl": "https://maps.google.com/?q=Sri%20Venkateswara%20College%2C%201%E2%80%936%2C%20Benito%20Juarez%20Marg%2C%20Dhaula%20Kuan%2C%20New%20Delhi%20%E2%80%93%20110021",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Sri Venkateswara College - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Sri Venkateswara College - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Vivekananda College",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110095",
+    "address": "Vivek Vihar, Delhi – 110095",
+    "googleLocationUrl": "https://maps.google.com/?q=Vivekananda%20College%2C%20Vivek%20Vihar%2C%20Delhi%20%E2%80%93%20110095",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Vivekananda College - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Vivekananda College - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Zakir Husain Delhi College (Evening)",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110002",
+    "address": "Jawaharlal Nehru Marg, New Delhi – 110002",
+    "googleLocationUrl": "https://maps.google.com/?q=Zakir%20Husain%20Delhi%20College%20(Evening)%2C%20Jawaharlal%20Nehru%20Marg%2C%20New%20Delhi%20%E2%80%93%20110002",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Zakir Husain Delhi College (Evening) - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Zakir Husain Delhi College (Evening) - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "centerName": "Zakir Husain Delhi College (Morning)",
+    "city": "Delhi",
+    "state": "Delhi",
+    "courses": [
+      "Multiple Trainings"
+    ],
+    "trainingName": "Multiple Trainings",
+    "pincode": "110002",
+    "address": "Jawaharlal Nehru Marg, New Delhi – 110002",
+    "googleLocationUrl": "https://maps.google.com/?q=Zakir%20Husain%20Delhi%20College%20(Morning)%2C%20Jawaharlal%20Nehru%20Marg%2C%20New%20Delhi%20%E2%80%93%20110002",
+    "contactPhone": "8595887700",
+    "contactPerson": "Center Coordinator",
+    "timing": "Mon - Sat: 9:00 AM - 5:30 PM",
+    "images": [
+      "/courses/ac-repair-course.jpg",
+      "/gallery/gallery-1.jpg",
+      "/gallery/gallery-2.jpg",
+      "/gallery/gallery-7.jpg"
+    ],
+    "videos": [
+      {
+        "title": "Zakir Husain Delhi College (Morning) - Center Facility & Labs Tour",
+        "url": "https://www.youtube.com/watch?v=077D38JpUv4",
+        "thumbnail": "/gallery/gallery-1.jpg"
+      },
+      {
+        "title": "Zakir Husain Delhi College (Morning) - Practical Training Session",
+        "url": "https://www.youtube.com/watch?v=q6t8rS618fQ",
+        "thumbnail": "/gallery/gallery-2.jpg"
       }
     ],
     "isActive": true

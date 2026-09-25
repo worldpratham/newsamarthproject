@@ -72,18 +72,38 @@ exports.getCenters = async (req, res) => {
       const cities = [...new Set(rawCenters.map(c => c.city).filter(Boolean))].sort();
       const states = [...new Set(rawCenters.map(c => c.state).filter(Boolean))].sort();
       const coursesSet = new Set();
+      const cityCounts = {};
+      const courseCounts = {};
+
       rawCenters.forEach(c => {
-        if (Array.isArray(c.courses)) c.courses.forEach(crs => coursesSet.add(crs));
-        if (c.trainingName) c.trainingName.split(',').forEach(crs => coursesSet.add(crs.trim()));
+        if (c.city) cityCounts[c.city] = (cityCounts[c.city] || 0) + 1;
+        if (Array.isArray(c.courses)) {
+          c.courses.forEach(crs => {
+            coursesSet.add(crs);
+            courseCounts[crs] = (courseCounts[crs] || 0) + 1;
+          });
+        }
+        if (c.trainingName) {
+          c.trainingName.split(',').forEach(crs => {
+            const trimmed = crs.trim();
+            coursesSet.add(trimmed);
+            if (!Array.isArray(c.courses) || !c.courses.includes(trimmed)) {
+              courseCounts[trimmed] = (courseCounts[trimmed] || 0) + 1;
+            }
+          });
+        }
       });
       const courses = [...coursesSet].filter(Boolean).sort();
 
       return res.status(200).json({
         success: true,
         count: centers.length,
+        total: rawCenters.length,
         cities,
         courses,
         states,
+        cityCounts,
+        courseCounts,
         data: centers
       });
     }
@@ -127,18 +147,37 @@ exports.getCenters = async (req, res) => {
     const cities = [...new Set(seedCenters.map(c => c.city).filter(Boolean))].sort();
     const states = [...new Set(seedCenters.map(c => c.state).filter(Boolean))].sort();
     const coursesSet = new Set();
+    const cityCounts = {};
+    const courseCounts = {};
     seedCenters.forEach(c => {
-      if (Array.isArray(c.courses)) c.courses.forEach(crs => coursesSet.add(crs));
-      if (c.trainingName) c.trainingName.split(',').forEach(crs => coursesSet.add(crs.trim()));
+      if (c.city) cityCounts[c.city] = (cityCounts[c.city] || 0) + 1;
+      if (Array.isArray(c.courses)) {
+        c.courses.forEach(crs => {
+          coursesSet.add(crs);
+          courseCounts[crs] = (courseCounts[crs] || 0) + 1;
+        });
+      }
+      if (c.trainingName) {
+        c.trainingName.split(',').forEach(crs => {
+          const trimmed = crs.trim();
+          coursesSet.add(trimmed);
+          if (!Array.isArray(c.courses) || !c.courses.includes(trimmed)) {
+            courseCounts[trimmed] = (courseCounts[trimmed] || 0) + 1;
+          }
+        });
+      }
     });
     const courses = [...coursesSet].filter(Boolean).sort();
 
     res.status(200).json({
       success: true,
       count: centers.length,
+      total: seedCenters.length,
       cities,
       courses,
       states,
+      cityCounts,
+      courseCounts,
       data: centers
     });
   } catch (error) {

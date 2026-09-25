@@ -67,11 +67,14 @@ export interface SingleCourseApiResponse {
 export interface CentersApiResponse {
   success: boolean;
   count: number;
+  total?: number;
   data: CenterApiModel[];
   cities?: string[];
   courses?: string[];
   states?: string[];
   trainings?: string[];
+  cityCounts?: Record<string, number>;
+  courseCounts?: Record<string, number>;
   message?: string;
 }
 
@@ -222,6 +225,9 @@ export interface AllCentersResponse {
   courses: string[];
   states: string[];
   trainings: string[];
+  cityCounts?: Record<string, number>;
+  courseCounts?: Record<string, number>;
+  total?: number;
 }
 
 /**
@@ -257,6 +263,9 @@ export async function getAllCenters(filters?: {
         courses: result.courses || result.trainings || [],
         states: result.states || [],
         trainings: result.trainings || result.courses || [],
+        cityCounts: result.cityCounts || {},
+        courseCounts: result.courseCounts || {},
+        total: result.total || result.data.length,
       };
     }
   } catch (err) {
@@ -273,6 +282,9 @@ export async function getAllCenters(filters?: {
             courses: fallbackResult.courses || fallbackResult.trainings || [],
             states: fallbackResult.states || [],
             trainings: fallbackResult.trainings || fallbackResult.courses || [],
+            cityCounts: fallbackResult.cityCounts || {},
+            courseCounts: fallbackResult.courseCounts || {},
+            total: fallbackResult.total || fallbackResult.data.length,
           };
         }
       }
@@ -306,17 +318,36 @@ export async function getAllCenters(filters?: {
 
   const cities = [...new Set(FALLBACK_CENTERS.map((c) => c.city).filter(Boolean) as string[])].sort();
   const coursesSet = new Set<string>();
+  const fallbackCityCounts: Record<string, number> = {};
+  const fallbackCourseCounts: Record<string, number> = {};
   FALLBACK_CENTERS.forEach(c => {
-    if (Array.isArray(c.courses)) c.courses.forEach(crs => coursesSet.add(crs));
-    if (c.trainingName) c.trainingName.split(',').forEach(crs => coursesSet.add(crs.trim()));
+    if (c.city) fallbackCityCounts[c.city] = (fallbackCityCounts[c.city] || 0) + 1;
+    if (Array.isArray(c.courses)) {
+      c.courses.forEach(crs => {
+        coursesSet.add(crs);
+        fallbackCourseCounts[crs] = (fallbackCourseCounts[crs] || 0) + 1;
+      });
+    }
+    if (c.trainingName) {
+      c.trainingName.split(',').forEach(crs => {
+        const trimmed = crs.trim();
+        coursesSet.add(trimmed);
+        if (!Array.isArray(c.courses) || !c.courses.includes(trimmed)) {
+          fallbackCourseCounts[trimmed] = (fallbackCourseCounts[trimmed] || 0) + 1;
+        }
+      });
+    }
   });
 
   return {
     centers: filtered,
     cities,
     courses: [...coursesSet].filter(Boolean).sort(),
-    states: [...new Set(FALLBACK_CENTERS.map((c) => c.state))].sort(),
+    states: [...new Set(FALLBACK_CENTERS.map((c) => c.state).filter(Boolean))],
     trainings: [...coursesSet].filter(Boolean).sort(),
+    cityCounts: fallbackCityCounts,
+    courseCounts: fallbackCourseCounts,
+    total: FALLBACK_CENTERS.length,
   };
 }
 
