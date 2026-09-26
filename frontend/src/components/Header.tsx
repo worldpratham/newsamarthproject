@@ -33,8 +33,9 @@ interface NavLinkItem {
 }
 
 const navLinks: NavLinkItem[] = [
-  { label: 'About Us', path: '/about', dropdown: aboutDropdownLinks },
-  { label: 'Success Stories', path: '/success-stories', dropdown: successDropdownLinks },
+  { label: 'About Us', path: '/about-us' },
+  { label: 'Success Stories', path: '/success-stories' },
+  { label: 'Gallery', path: '/gallery' },
   { label: 'Career Development Center', path: '/career-development-center' },
   { label: 'Community Training Programs', path: '/community-training-programs' },
   { label: 'Training Center detail', path: '/training-center-detail' },
@@ -60,6 +61,14 @@ export default function Header() {
 
   const isActive = (path: string) => {
     if (path === '/') return location.pathname === '/';
+    if (path === '/about-us' || path === '/about') {
+      return (
+        location.pathname === '/about' ||
+        location.pathname === '/about/' ||
+        location.pathname === '/about-us' ||
+        location.pathname === '/about-us/'
+      );
+    }
     return location.pathname.startsWith(path);
   };
 
@@ -89,12 +98,12 @@ export default function Header() {
 
           {/* Center Action Buttons */}
           <div className="flex items-center gap-2.5">
-            <Link
+            {/* <Link
               to="/donate-us"
               className="bg-[#F87902] hover:bg-[#e06c00] text-white font-bold text-[11px] uppercase tracking-wider px-3.5 py-1 rounded-sm transition-colors shadow-sm"
             >
               DONATE US
-            </Link>
+            </Link> */}
             <Link
               to="/contact-us"
               className="bg-[#F87902] hover:bg-[#e06c00] text-white font-bold text-[11px] uppercase tracking-wider px-3.5 py-1 rounded-sm transition-colors shadow-sm"

@@ -330,7 +330,7 @@ export default function Events() {
           <div className="w-full lg:w-[30%]">
             <div className="space-y-6">
               {/* 1. Facebook Page Embed Box (matches elementor-element-c9d0e6a) */}
-              <div
+              {/* <div
                 className="w-full bg-white rounded-[8px] border border-[#CACACA] overflow-hidden p-2"
                 style={{
                   boxShadow: '0 0 8px 0 rgba(0, 0, 0, 0.08)',
@@ -348,7 +348,7 @@ export default function Events() {
                   title="Samarth Bharat Facebook Feed"
                   className="w-full h-[500px]"
                 />
-              </div>
+              </div> */}
 
               {/* 2. Yearly Reports (matches elementor-element-db11c58 & 6b41645) */}
               <div className="pt-2">

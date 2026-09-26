@@ -129,12 +129,12 @@ export default function Footer() {
           {/* Column 3: Support us */}
           <div className="lg:col-span-2 flex flex-col items-start">
             <h3 className="text-lg sm:text-xl font-serif font-bold text-white mb-4">
-              Support us
+              Support Us
             </h3>
             <ul className="space-y-2.5 text-xs sm:text-[13.5px] mb-6 w-full">
               {[
-                { label: 'Donate Online', path: '/donate-us' },
-                { label: 'Corporate Partnership (CSR)', path: '/about' },
+                { label: 'Contribute Online', path: '/donate-us' },
+                { label: 'Corporate Partnership (CSR)', path: '/corporate-partnership' },
                 { label: 'Volunteer', path: '/contact-us' },
               ].map((link) => (
                 <li key={link.label}>
@@ -151,12 +151,12 @@ export default function Footer() {
               ))}
             </ul>
 
-            <Link
+            {/* <Link
               to="/donate-us"
               className="bg-[#F87902] hover:bg-[#e06c00] text-white font-bold text-xs uppercase tracking-wider px-6 py-2.5 rounded-none transition-colors shadow-sm inline-block"
             >
               DONATE US
-            </Link>
+            </Link> */}
           </div>
 
           {/* Column 4: Contact Us */}

@@ -243,7 +243,7 @@ export default function DonateUs() {
               fontWeight: 800,
             }}
           >
-            Donate Us
+Contribute
           </h2>
           <h5 className="text-sm sm:text-base md:text-lg font-normal text-white/95 tracking-wide max-w-2xl mx-auto">
             Empower Dreams, Uplift Lives – Your Donation Makes It Possible!
@@ -286,7 +286,7 @@ export default function DonateUs() {
               with the tools, guidance they need to stand on their feet.
             </p>
 
-            <div className="pt-2">
+            {/* <div className="pt-2">
               <button
                 type="button"
                 onClick={handleOpenPopup}
@@ -296,9 +296,9 @@ export default function DonateUs() {
                   borderRadius: '0px',
                 }}
               >
-                Donate Now
+              Contribute Online
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -342,7 +342,7 @@ export default function DonateUs() {
               borderRadius: '0px',
             }}
           >
-            Donate Now
+    Contribute Online
           </button>
         </div>
       </section>

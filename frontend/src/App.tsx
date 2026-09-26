@@ -15,6 +15,7 @@ import CentresDetails from '@/pages/CentresDetails';
 import TrainingCenterDetail from '@/pages/TrainingCenterDetail';
 import ContactUs from '@/pages/ContactUs';
 import DonateUs from '@/pages/DonateUs';
+import CorporatePartnership from '@/pages/CorporatePartnership';
 import NotFound from '@/pages/NotFound';
 
 // Admin Panel Pages
@@ -45,6 +46,15 @@ export default function App() {
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/about/" element={<About />} />
+          <Route path="/about-us" element={<About />} />
+          <Route path="/about-us/" element={<About />} />
+          <Route path="/corporate-partnership" element={<CorporatePartnership />} />
+          <Route path="/corporate-partnership/" element={<CorporatePartnership />} />
+          <Route path="/corporate-partnerships" element={<CorporatePartnership />} />
+          <Route path="/corporate-partnerships/" element={<CorporatePartnership />} />
+          <Route path="/csr" element={<CorporatePartnership />} />
+          <Route path="/csr/" element={<CorporatePartnership />} />
           <Route path="/bhaorao-deoras-seva-nyas" element={<About />} />
           <Route path="/samarth-bharat-intro" element={<SamarthBharatIntro />} />
           <Route path="/project-team" element={<ProjectTeam />} />
